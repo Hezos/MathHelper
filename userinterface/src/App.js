@@ -1,25 +1,21 @@
 import './App.css';
-import {useEffect, useState} from 'react'
+import React, { useState, useEffect } from 'react';
 
 
-//const [data, setData] = useState();
 
-var data = {
-  meta: 'This is metadata',
-  xPos:10
-};
-
-function frame(){
-  setInterval(() =>{
-    data.xPos += 10;
-    console.log('Moving object');
-  },10);
-}
 
 function App() {
   
-  frame();
+  const [count, setCount] = useState(0);
 
+  var data = {
+    xPos: 10,
+    meta:'This is data from a variable'
+  }
+
+  setInterval(() => {
+    setCount(count + 1);
+  }, 100);
 
   return (
     <div className="App">
@@ -27,12 +23,16 @@ function App() {
         Learn math with my sidekick!
       </h1>
       <p>
-        {data.meta}
+        {data.xPos}
       </p>
       <svg width="400" height="120">
-        <rect x={data.xPos.toString()} y={data.xPos.toString()} width={data.xPos.toString()}
+        <rect id='myRect' x={count} y={data.xPos} width={100}
          height="100" stroke="red" strokeWidth="6" fill="blue" />
       </svg>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
     </div>
   );
 }
