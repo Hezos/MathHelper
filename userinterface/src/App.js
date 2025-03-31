@@ -1,37 +1,38 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
+function RotateElement(id, degree){
+  document.getElementById(id).style.transform = `rotateZ(${degree}deg)`;
+}
 
 
 function App() {
   
   const [count, setCount] = useState(0);
 
-  var data = {
-    xPos: 10,
-    meta:'This is data from a variable'
-  }
-
   setInterval(() => {
-    setCount(count + 1);
-  }, 100);
+    //setCount(count + 1);
+    //RotateElement('myRect', count);
+  }, 1000);
 
+  //Change the rectanlge to a component with parameters
   return (
     <div className="App">
       <h1>
         Learn math with my sidekick!
       </h1>
-      <p>
-        {data.xPos}
-      </p>
-      <svg width="400" height="120">
-        <rect id='myRect' x={count} y={data.xPos} width={100}
-         height="100" stroke="red" strokeWidth="6" fill="blue" />
-      </svg>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
+      <svg class="border border-4" width="100%" height={window.innerHeight * 0.9} >
+        <rect style={{'transform-origin': 'center center'}} id='myRect' x={window.innerWidth/2 - window.innerWidth/10} 
+        y={window.innerHeight*0.9/2} width={window.innerWidth/5} 
+        height={window.innerHeight*0.03} fill="blue" transform={`rotateZ(${count}deg)`} />
+      </svg>  
+      <button onClick={() => {
+          setCount(count + 30);  
+          RotateElement("myRect", count);
+        }}>
+        Rotate balance
       </button>
     </div>
   );
