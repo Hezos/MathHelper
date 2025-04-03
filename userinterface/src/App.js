@@ -21,24 +21,56 @@ function DrawBasic(posX, posY, width, height){
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
 
+  ctx.reset();
   //drawing the rectangle
-  ctx.fillStyle = "gray";
+  ctx.fillStyle = "blue";
   ctx.fillRect(posX-width/2, posY-height/2, width, height);
+
+
+  ctx.fillStyle = "green";
+  ctx.fillRect(posX-width/2-width/8, posY-height*1.5, width/4, height);
+  ctx.fillRect(posX-width/2+width-width/8, posY-height*1.5, width/4, height);
+  const circle = new Path2D();
+  circle.arc(posX-width/2, posY+height/32, height*0.75, 0, 2 * Math.PI);
+  circle.arc(posX-width/2 + width, posY+height/32, height*0.75, 0, 2 * Math.PI);
+  ctx.fillStyle = "yellow";
+  ctx.fill(circle);
+
+  ctx.beginPath();
+  ctx.moveTo(posX+width/6, posY+height*2);
+  ctx.lineTo(posX, posY+height/2);
+  ctx.lineTo(posX-width/6, posY+height*2);
+  ctx.fill();
+
+
 }
 
 //If there wasn't any reset it continues rotating over and over again.
-function DrawRotated(posX, posY, width, height){
+function DrawRotated(degree, posX, posY, width, height){
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
+  ctx.reset();
+
   // Matrix transformation
   ctx.translate(posX, posY);
-  ctx.rotate(Math.PI / 12);
+
+  ctx.fillStyle = "yellow";
+  ctx.beginPath();
+  ctx.moveTo(posX+width/6, posY+height*2);
+  ctx.lineTo(posX, posY+height/2);
+  ctx.lineTo(posX-width/6, posY+height*2);
+  ctx.fill();
+
+  ctx.rotate(degree);
   ctx.translate(-1*(posX), -1*(posY));
 
   // Rotated rectangle
-  ctx.fillStyle = "red";
+  ctx.fillStyle = "blue";
   ctx.fillRect(posX-width/2, posY-height/2, width, height);
 
+  ctx.translate(posX, posY);
+
+  
 }
 
   const [count, setCount] = useState(0);
@@ -90,6 +122,7 @@ function DrawRotated(posX, posY, width, height){
       <button onClick={() => {
           //Set a different rotating sequence
           setCount(count - 30);
+          DrawRotated(-60, window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);  
           //window.requestAnimationFrame(Draw);
         }}>
         Add to left
@@ -102,7 +135,7 @@ function DrawRotated(posX, posY, width, height){
       <button onClick={() => {
           //Set a different rotating sequence
           setCount(count + 30);
-          DrawRotated(window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);  
+          DrawRotated(60, window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);  
           //window.requestAnimationFrame(Draw);
         }}>
         Add to right
