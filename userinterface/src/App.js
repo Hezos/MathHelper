@@ -59,6 +59,22 @@ function DrawRotated(degree, posX, posY, width, height){
   const ctx = canvas.getContext("2d");
   ctx.reset();
 
+
+
+  //Rotated pole starts here.
+  ctx.translate(posX, posY);
+
+  ctx.rotate(degree);
+  ctx.translate(-1*(posX), -1*(posY));
+
+  // Rotated rectangle
+  ctx.fillStyle = "blue";
+  ctx.fillRect(posX-width/2, posY-height/2, width, height);
+
+  ctx.translate(posX, posY);
+  //End of rotated pole
+  ctx.resetTransform();
+
   
   ctx.fillStyle = "purple";
   ctx.fillRect(posX-width/2-width/12 - (width/2- width/2*Math.cos(degree)) + width, posY-height*2.5 + width/2* Math.sin(degree), width/6, height);
@@ -87,20 +103,6 @@ function DrawRotated(degree, posX, posY, width, height){
 
 
 
-
-  //Rotated pole starts here.
-  ctx.translate(posX, posY);
-
-  ctx.rotate(degree);
-  ctx.translate(-1*(posX), -1*(posY));
-
-  // Rotated rectangle
-  ctx.fillStyle = "blue";
-  ctx.fillRect(posX-width/2, posY-height/2, width, height);
-
-  ctx.translate(posX, posY);
-  //End of rotated pole
-  
   
 }
 
