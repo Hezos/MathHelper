@@ -3,6 +3,10 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react';
 //import { motion } from 'framer-motion';
 
+
+
+
+
 //Solve drawings as pictures maybe?
 function DrawBasic(posX, posY, width, height){
   //It has a + on the left side (x + something)
@@ -135,7 +139,7 @@ function DrawSolved(posX, posY, width, height){
 function App() {
 
 
-const [showEquation, setShowEquation] = useState(false);
+  const [showEquation, setShowEquation] = useState(false);
 
 //https://motion.dev/docs/react-quick-start
 /*
@@ -159,69 +163,71 @@ const [showEquation, setShowEquation] = useState(false);
       </svg>
 */
 
-if(showEquation)
-{
-  return (
-    <div className="App" >
+  if(showEquation)
+  {
+    return (
+      <div className="App" >
+        <h1>
+          Learn math with my sidekick!
+        </h1>
+      <button onClick={()=>{
+        setShowEquation(true);
+      }}>
+        Equations
+      </button>
+      <button>
+        Area, Volume calculations
+      </button>
+        <canvas id="canvas" width={window.innerWidth} height={window.innerHeight*0.9} class="border border-2"></canvas>
+        <div >
+          <button onClick={() => {
+              DrawRotated(-60, window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40, "left");  
+            }}>
+            Add to left
+          </button>
+          <button onClick={()=>{
+            DrawBasic(window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);
+          }}>
+            Restart balance
+          </button>
+          <button onClick={() => {
+            DrawRotated(60, window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40, "right");  
+            }}>
+            Add to right
+          </button>
+          <button onClick={() => {
+              DrawSolved(window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);
+            }}>
+            Show solution
+          </button>
+        </div>      
+      </div>
+    );
+  }
+  else
+  {
+    return (
+      <div className="App" >
       <h1>
         Learn math with my sidekick!
       </h1>
-    <button onClick={()=>{
-      setShowEquation(true);
-    }}>
-      Equations
-    </button>
-    <button>
-      Area, Volume calculations
-    </button>
-      <canvas id="canvas" width={window.innerWidth} height={window.innerHeight*0.9} class="border border-2"></canvas>
-      <div >
-      <button onClick={() => {
-          DrawRotated(-60, window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40, "left");  
-        }}>
-        Add to left
-      </button>
       <button onClick={()=>{
-        DrawBasic(window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);
+        setShowEquation(true);
       }}>
-        Restart balance
+        Equations
       </button>
-      <button onClick={() => {
-          DrawRotated(60, window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40, "right");  
-        }}>
-        Add to right
+      <button>
+        Area, Volume calculations
       </button>
-      <button onClick={() => {
-          DrawSolved(window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);
-        }}>
-        Show solution
+      <canvas id="canvas" width={window.innerWidth} height={window.innerHeight*0.9} class="border border-2"></canvas>
+      <button onClick={()=>{
+      }}>
+        Draw
       </button>
-      
-      </div>
-      
-    </div>
-  );
-}
-else
-{
-  return (
-    <div className="App" >
-    <h1>
-      Learn math with my sidekick!
-    </h1>
-    <button onClick={()=>{
-      setShowEquation(true);
-    }}>
-      Equations
-    </button>
-    <button>
-      Area, Volume calculations
-    </button>
-    </div>
-  );
-  
-}
 
+      </div>
+    );
+  }
   
 }
 
