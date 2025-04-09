@@ -266,43 +266,50 @@ function ShowDivisionFractured(){
   ctx.strokeStyle = "white";
 
   ctx.fillStyle = "blue";
-  ctx.fillRect(1300, 100+2*200/3, 200, 200/3);
+  
+  
+  ctx.fillRect(100,100, 1000, 50);
+  
 
 
-  //Division make it show sharing process
-  ctx.fillRect(1000, 400, 100, 50);
-  ctx.fillRect(1000, 450, 100, 50);
-  ctx.fillRect(1150, 400, 100, 50);
-  ctx.fillRect(1150, 450, 100, 50);
-  ctx.fillRect(1300, 400, 100, 50);
-  ctx.fillRect(1300, 450, 100, 50);
-  ctx.fillRect(1450, 400, 100, 50);
-  ctx.fillRect(1450, 450, 100, 50);
-  ctx.fillRect(1600, 400, 100, 50);
-  ctx.fillRect(1600, 450, 100, 50);
-  ctx.fillRect(1750, 400, 100, 50);
-  ctx.fillRect(1750, 450, 100, 50);
-  ctx.fillRect(1000, 600, 100, 50);
-  ctx.fillRect(1000, 650, 100, 50);
-  ctx.fillRect(1150, 600,100,50);
-  //ctx.fillRect(1150, 650,100,50);
+  ctx.lineWidth = 10;
+  ctx.strokeStyle = "white";
+  ctx.strokeRect(100,100, 1000, 50);
+  //Divide it with 4 first, than 5
+  //if statement before showing the divided form.
+  ctx.strokeRect(100,100, 100, 50);
+  ctx.strokeRect(100,100, 300, 50);
+  ctx.strokeRect(100,100,200,50);
+  ctx.strokeRect(100,100,400,50);
+  ctx.strokeRect(100,100,500,50);
+  ctx.strokeRect(100,100,600,50);
+  ctx.strokeRect(100,100,700,50);
+  ctx.strokeRect(100,100,800,50);
+  ctx.strokeRect(100,100,900,50);
 
-  ctx.strokeRect(1000, 400, 100, 50);
-  ctx.strokeRect(1000, 450, 100, 50);
-  ctx.strokeRect(1150, 400, 100, 50);
-  ctx.strokeRect(1150, 450, 100, 50);
-  ctx.strokeRect(1300, 400, 100, 50);
-  ctx.strokeRect(1300, 450, 100, 50);
-  ctx.strokeRect(1450, 400, 100, 50);
-  ctx.strokeRect(1450, 450, 100, 50);
-  ctx.strokeRect(1600, 400, 100, 50);
-  ctx.strokeRect(1600, 450, 100, 50);
-  ctx.strokeRect(1750, 400, 100, 50);
-  ctx.strokeRect(1750, 450, 100, 50);
-  ctx.strokeRect(1000, 600, 100, 50);
-  ctx.strokeRect(1000, 650, 100, 50);
-  ctx.strokeRect(1150, 600,100,50);
-  //ctx.strokeRect(1150, 650,100,50);
+  //Fill colors here
+  ctx.strokeRect(100,200, 100, 50);
+  ctx.strokeRect(100,200, 200, 50);
+  ctx.strokeRect(100,300, 100, 50);
+  ctx.strokeRect(100,300, 200, 50);
+  ctx.strokeRect(100,500, 100, 50);
+  ctx.strokeRect(100,500, 200, 50);
+  ctx.strokeRect(100,400, 100, 50);
+  ctx.strokeRect(100,400, 200, 50);
+
+  //Add the remaining pieces later.
+  ctx.strokeRect(100,200, 250, 50);
+  ctx.strokeRect(100,300, 250, 50);
+  ctx.strokeRect(100,500, 250, 50);
+  ctx.strokeRect(100,400, 250, 50);
+
+
+  //Have to divide this for 4 pieces
+  ctx.strokeRect(700,200, 100, 50);
+  ctx.strokeRect(700,200, 200, 50);
+  ctx.strokeRect(700,200, 50, 50);
+  ctx.strokeRect(700,200, 150, 50);
+
 
 }
 
