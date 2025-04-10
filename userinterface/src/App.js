@@ -1,6 +1,7 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react';
+import { MultiplicationPage } from './components/MultiplicationPage';
 //import { MainComponent } from './components/MainApp';
 //import { motion } from 'framer-motion';
 
@@ -275,6 +276,13 @@ function ShowDivisionFractured(){
   ctx.lineWidth = 10;
   ctx.strokeStyle = "white";
   ctx.strokeRect(100,100, 1000, 50);
+
+
+  ctx.fillRect(100,200, 250, 50);
+  ctx.fillRect(100,300, 250, 50);
+  ctx.fillRect(100,500, 250, 50);
+  ctx.fillRect(100,400, 250, 50);
+
   //Divide it with 4 first, than 5
   //if statement before showing the divided form.
   ctx.strokeRect(100,100, 100, 50);
@@ -288,6 +296,15 @@ function ShowDivisionFractured(){
   ctx.strokeRect(100,100,900,50);
 
   //Fill colors here
+  ctx.fillRect(100,200, 100, 50);
+  ctx.fillRect(100,200, 200, 50);
+  ctx.fillRect(100,300, 100, 50);
+  ctx.fillRect(100,300, 200, 50);
+  ctx.fillRect(100,500, 100, 50);
+  ctx.fillRect(100,500, 200, 50);
+  ctx.fillRect(100,400, 100, 50);
+  ctx.fillRect(100,400, 200, 50);
+
   ctx.strokeRect(100,200, 100, 50);
   ctx.strokeRect(100,200, 200, 50);
   ctx.strokeRect(100,300, 100, 50);
@@ -298,13 +315,26 @@ function ShowDivisionFractured(){
   ctx.strokeRect(100,400, 200, 50);
 
   //Add the remaining pieces later.
+
   ctx.strokeRect(100,200, 250, 50);
   ctx.strokeRect(100,300, 250, 50);
   ctx.strokeRect(100,500, 250, 50);
   ctx.strokeRect(100,400, 250, 50);
 
+  ctx.fillRect(700,200,200,50);
 
-  //Have to divide this for 4 pieces
+  ctx.fillRect(700,300, 50, 50);
+  ctx.fillRect(780,300, 50, 50);
+  ctx.fillRect(860,300, 50, 50);
+  ctx.fillRect(940,300, 50, 50);
+
+
+  ctx.strokeRect(700,300, 50, 50);
+  ctx.strokeRect(780,300, 50, 50);
+  ctx.strokeRect(860,300, 50, 50);
+  ctx.strokeRect(940,300, 50, 50);
+
+
   ctx.strokeRect(700,200, 100, 50);
   ctx.strokeRect(700,200, 200, 50);
   ctx.strokeRect(700,200, 50, 50);
@@ -386,6 +416,9 @@ function App() {
   const [showFractions, setShowFractions] = useState(false);
 
   const [showShapes, setShowShapes] = useState(false);
+
+  const [showMultiplication, setShowMultiplication] = useState(false);
+
 
 //https://motion.dev/docs/react-quick-start
 /*
@@ -516,6 +549,37 @@ function App() {
       </div>
     );
   }
+  else if(showMultiplication)
+  {
+    return (
+      <div className="App">
+        <h1>
+          Learn math with my sidekick!
+        </h1>
+        <button onClick={()=>{
+          setShowEquation(true);     
+        }}>
+          Equations
+        </button>
+        <button onClick={()=>{
+          setShowShapes(true);
+        }}>
+          Area, Volume calculations
+        </button>
+        <button onClick={()=>{
+          setShowFractions(true);
+        }}>
+          Calculate fractions
+        </button>
+        <button onClick={()=>{
+            setShowMultiplication(true);
+        }}>
+          Multiplication
+        </button>
+        <MultiplicationPage/>
+      </div>
+    );
+  }
   else
   {
     return (
@@ -537,6 +601,11 @@ function App() {
             setShowFractions(true);
         }}>
           Calculate fractions
+        </button>
+        <button onClick={()=>{
+            setShowMultiplication(true);
+        }}>
+          Multiplication
         </button>
       </div>
     );

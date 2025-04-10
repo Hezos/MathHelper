@@ -1,8 +1,6 @@
 
 export function MainComponent() {
 
-
-
     return (
         <div className="App">
          <h1>
