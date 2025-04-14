@@ -1,8 +1,4 @@
-/*
 
-            
-
-*/
 
 export function Advertisement(){
     return (

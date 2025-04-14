@@ -2,7 +2,7 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react';
 import { MultiplicationPage } from './components/MultiplicationPage';
-//import { MainComponent } from './components/MainApp';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 //import { motion } from 'framer-motion';
 
 
@@ -420,6 +420,12 @@ function App() {
   const [showMultiplication, setShowMultiplication] = useState(false);
 
 
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleClose = () => setShowMenu(false);
+  const handleShow = () => setShowMenu(true);
+
+
 //https://motion.dev/docs/react-quick-start
 /*
 
@@ -441,6 +447,7 @@ function App() {
           fill="red" />
       </svg>
 */
+
 
   if(showEquation)
   {
@@ -552,65 +559,195 @@ function App() {
   else if(showMultiplication)
   {
     return (
-      <div className="App">
-        <h1>
-          Learn math with my sidekick!
-        </h1>
-        <button onClick={()=>{
-          setShowEquation(true);     
-        }}>
-          Equations
-        </button>
-        <button onClick={()=>{
-          setShowShapes(true);
-        }}>
-          Area, Volume calculations
-        </button>
-        <button onClick={()=>{
-          setShowFractions(true);
-        }}>
-          Calculate fractions
-        </button>
-        <button onClick={()=>{
-            setShowMultiplication(true);
-        }}>
-          Multiplication
-        </button>
+      <div >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div>
+            <button class="btn info"  onClick={handleShow}>
+              Topics
+            </button>
+            <Offcanvas show={showMenu} onHide={handleClose}>
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>
+                  Learn math with my sidekick!
+                </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body class="container">
+              <div>
+                <div>
+                <button class="btn info" onClick={()=>{
+                    setShowEquation(true);     
+                  }}>
+                    Equations
+                  </button>
+                </div>
+                <div>
+                  <button class="btn info"  onClick={()=>{
+                    setShowShapes(true);
+                    }}>
+                      Area, Volume calculations
+                    </button>
+                </div>
+                <div>
+                  <button class="btn info"  onClick={()=>{
+                    setShowFractions(true);
+                    }}>
+                      Calculate fractions
+                    </button>
+                </div>
+                <div>
+                  <button class="btn info" onClick={()=>{
+                    setShowMultiplication(true);
+                    }}>
+                      Multiplication
+                    </button>
+                </div>
+              </div>
+            </Offcanvas.Body>
+             </Offcanvas>         
+        </div>
+        <div class="collapse navbar-collapse" >
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="btn info" href="http://localhost:3000" >
+                Home
+              </a>
+            </li>
+          </ul>
+          <div class="text-end w-100">
+            <a class="btn info" href="http://localhost:3000">YouTube</a>
+          </div>
+          </div>
+        </nav>
+        <div >
         <MultiplicationPage/>
+        </div>
       </div>
     );
   }
   else
   {
-    return (
-        <div className="App">
-         <h1>
-          Learn math with my sidekick!
-        </h1>
-        <button onClick={()=>{
-            setShowEquation(true);     
-        }}>
-          Equations
-        </button>
-        <button onClick={()=>{
-            setShowShapes(true);
-        }}>
-          Area, Volume calculations
-        </button>
-        <button onClick={()=>{
-            setShowFractions(true);
-        }}>
-          Calculate fractions
-        </button>
-        <button onClick={()=>{
-            setShowMultiplication(true);
-        }}>
-          Multiplication
-        </button>
+    return (      
+      <div >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div>
+            <button class="btn info"  onClick={handleShow}>
+              Topics
+            </button>
+            <Offcanvas show={showMenu} onHide={handleClose}>
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>
+                  Learn math with my sidekick!
+                </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body class="container">
+              <div>
+                <div>
+                <button class="btn info" onClick={()=>{
+                    setShowEquation(true);     
+                  }}>
+                    Equations
+                  </button>
+                </div>
+                <div>
+                  <button class="btn info"  onClick={()=>{
+                    setShowShapes(true);
+                    }}>
+                      Area, Volume calculations
+                    </button>
+                </div>
+                <div>
+                  <button class="btn info"  onClick={()=>{
+                    setShowFractions(true);
+                    }}>
+                      Calculate fractions
+                    </button>
+                </div>
+                <div>
+                  <button class="btn info" onClick={()=>{
+                    setShowMultiplication(true);
+                    }}>
+                      Multiplication
+                    </button>
+                </div>
+              </div>
+            </Offcanvas.Body>
+          </Offcanvas>         
+        </div>
+        <div class="collapse navbar-collapse" >
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="btn info" href="http://localhost:3000" >
+                Home
+              </a>
+            </li>
+          </ul>
+          <div class="text-end w-100">
+            <a class="btn info" href="http://localhost:3000">YouTube</a>
+          </div>
+          </div>
+        </nav>   
+        <div>
+          <p class="text-center h1 display-1">Learn math with my sidekick!</p>
+          <div class="text-center">
+         <img class="w-50 h-50"
+        src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/Welcome.png")} alt="Image goes here." />
+        </div>
+        <table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th colSpan={8} class="text-center" scope="row">Table of contents</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td colSpan={8} class="text-center" scope="row"> Number line </td>
+    </tr>
+    <tr>
+    <td colSpan={3} class="text-center" > Addition </td>
+    <td colSpan={8} class="text-center" > Substraction </td>
+    </tr>
+    <tr>
+      <td colSpan={3} class="text-center" scope="row"> Multiplication </td>
+      <td colSpan={8} class="text-center" scope="row"> Division </td>
+    </tr>
+    <tr>
+      <td colSpan={1} class="text-center" scope="row"> Exponentiation </td>
+      <td colSpan={2} class="text-center" scope="row"> Factorials </td>
+      <td colSpan={5} class="text-center " scope="row"> Fractions </td>
+    </tr>
+    <tr>
+      <td colSpan={8} class="text-center ">  Variables </td>
+    </tr>
+    <tr>
+      <td colSpan={8} class="text-center ">  Equations </td>
+    </tr>
+    <tr>
+    <td  rowSpan={2} class="text-center align-middle"> Area calculation </td>
+      <td colSpan={3} class="text-center ">  Series </td>
+      <td  colSpan={8} rowSpan={3} class="text-center align-middle" > Percentage  </td>
+    </tr>
+    <tr>
+      <td  colSpan={3} class="text-center" > Sine, Cosine </td>
+    </tr>
+    <tr>
+      <td  colSpan={4} class="text-center ">  Surface and volume calculations </td>
+    </tr>
+    <tr>
+      <td colSpan={5} class="text-center "> Coordinate system </td>
+    </tr>
+    <tr>
+      <td colSpan={5} class="text-center "> Graphs </td>
+    </tr>
+    <tr>
+      <td colSpan={5} class="text-center "> Functions </td>
+    </tr>
+
+  </tbody>
+</table>
+        </div>
       </div>
     );
   }
-  
 }
 
 export default App;

@@ -11,8 +11,10 @@ export function MultiplicationPage(){
         <p class="text-start h5 display-5"> Let's suppose you have to add six twos together like this: </p>
         <br></br>
         <p class="text-center h4 display-4"> 2 + 2 + 2 + 2 + 2 + 2 = 12 </p>
-        <img class="w-50 h-50"
+        <div class="text-center">
+        <img class="w-50 h-50 "
         src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Mult1.png")} alt="Image goes here." />
+        </div>
         <p class="text-start h5 display-5">
             That's why multiplication was created for.
         </p>
@@ -34,8 +36,10 @@ export function MultiplicationPage(){
         <p class="text-start h6 display-6">
             The operation reads six times two.
         </p>
-        <img class="w-50 h-50"
+        <div class="text-center">
+         <img class="w-50 h-50 "
         src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Mult2.png")} alt="Image goes here." />
+        </div>
         <br></br>
         <p class="text-start h6 display-6">
             So the result of the two operations will be the same. They are equal to each other.
@@ -53,7 +57,8 @@ export function MultiplicationPage(){
         <p class="text-start h6 display-6">
             Multiplication is commutative, so 2 &#8729; 6 is equal to 6 &#8729; 2, the result of the calculations are both 12.
         </p>
-        <img class="w-50 h-50 text-center"
+        <div class="text-center">
+        <img class="w-50 h-50"
          src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Mul4.png")} alt="Image goes here." />
          <br></br>
         <img class="w-50 h-50 text-center"
@@ -61,6 +66,7 @@ export function MultiplicationPage(){
         <br></br>
         <a href="http://localhost:3000">Further explaination in a youtube video</a>
         <Advertisement/>
+        </div>
     </div>
 
     );
