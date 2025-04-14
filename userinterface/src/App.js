@@ -618,7 +618,7 @@ function App() {
           </div>
           </div>
         </nav>
-        <div >
+        <div class="text-center">
         <MultiplicationPage/>
         </div>
       </div>
@@ -690,7 +690,7 @@ function App() {
           <p class="text-center h1 display-1">Learn math with my sidekick!</p>
           <div class="text-center">
          <img class="w-50 h-50"
-        src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/Welcome.png")} alt="Image goes here." />
+        src ={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/Welcome.png")} alt="Image goes here." />
         </div>
         <table class="table table-bordered table-dark">
   <thead>
@@ -700,15 +700,37 @@ function App() {
   </thead>
   <tbody>
     <tr>
-    <td colSpan={8} class="text-center" scope="row"> Number line </td>
+    < td colSpan={8} class="text-center" scope="row">
+        <button class="btn info">
+          Number line
+        </button> 
+      </td>
     </tr>
     <tr>
-    <td colSpan={3} class="text-center" > Addition </td>
-    <td colSpan={8} class="text-center" > Substraction </td>
+    <td colSpan={3} class="text-center" >
+       <button class="btn info">
+        Addition
+      </button> 
+      </td>
+      <td colSpan={8} class="text-center" >
+        <button class="btn info"> 
+        Substraction
+        </button>
+        </td>
     </tr>
     <tr>
-      <td colSpan={3} class="text-center" scope="row"> Multiplication </td>
-      <td colSpan={8} class="text-center" scope="row"> Division </td>
+      <td colSpan={3} class="text-center" scope="row">
+      <button class="btn info" onClick={()=>{
+          setShowMultiplication(true);
+         }}> 
+        Multiplication 
+        </button>
+      </td>
+      <td colSpan={8} class="text-center" scope="row">
+        <button class="btn info"> 
+          Division
+        </button>
+       </td>
     </tr>
     <tr>
       <td colSpan={1} class="text-center" scope="row"> Exponentiation </td>
