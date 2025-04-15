@@ -3,6 +3,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react';
 import { MultiplicationPage } from './components/MultiplicationPage';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { DivisionPage } from './components/DivisionPage';
 //import { motion } from 'framer-motion';
 
 
@@ -419,11 +420,7 @@ function App() {
 
   const [showMultiplication, setShowMultiplication] = useState(false);
 
-
-  const [showMenu, setShowMenu] = useState(false);
-
-  const handleClose = () => setShowMenu(false);
-  const handleShow = () => setShowMenu(true);
+  const [showDivision, setShowDivision] = useState(false);
 
 
 //https://motion.dev/docs/react-quick-start
@@ -562,10 +559,10 @@ function App() {
       <div >
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div>
-            <button class="btn info"  onClick={handleShow}>
+            <button class="btn info" >
               Topics
             </button>
-            <Offcanvas show={showMenu} onHide={handleClose}>
+            <Offcanvas  >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                   Learn math with my sidekick!
@@ -575,14 +572,13 @@ function App() {
               <div>
                 <div>
                 <button class="btn info" onClick={()=>{
-                    setShowEquation(true);     
+                         
                   }}>
                     Equations
                   </button>
                 </div>
                 <div>
                   <button class="btn info"  onClick={()=>{
-                    setShowShapes(true);
                     }}>
                       Area, Volume calculations
                     </button>
@@ -599,6 +595,12 @@ function App() {
                     setShowMultiplication(true);
                     }}>
                       Multiplication
+                    </button>
+                </div>
+                 <div>
+                  <button class="btn info" onClick={()=>{
+                    }}>
+                      Division
                     </button>
                 </div>
               </div>
@@ -624,16 +626,16 @@ function App() {
       </div>
     );
   }
-  else
+  else if(showDivision)
   {
-    return (      
+    return (
       <div >
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div>
-            <button class="btn info"  onClick={handleShow}>
+            <button class="btn info"  >
               Topics
             </button>
-            <Offcanvas show={showMenu} onHide={handleClose}>
+            <Offcanvas >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                   Learn math with my sidekick!
@@ -669,6 +671,14 @@ function App() {
                       Multiplication
                     </button>
                 </div>
+                <div>
+                  <button class="btn info" onClick={()=>{
+                    
+                    setShowDivision(true);
+                    }}>
+                      Division
+                    </button>
+                </div>
               </div>
             </Offcanvas.Body>
           </Offcanvas>         
@@ -685,7 +695,16 @@ function App() {
             <a class="btn info" href="http://localhost:3000">YouTube</a>
           </div>
           </div>
-        </nav>   
+        </nav>
+        <DivisionPage/>   
+       </div> 
+    );
+  }
+  else
+  {
+    return (      
+      <div >
+        
         <div>
           <p class="text-center h1 display-1">Learn math with my sidekick!</p>
           <div class="text-center">
@@ -758,7 +777,7 @@ function App() {
       <td colSpan={5} class="text-center "> Coordinate system </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center "> Graphs </td>
+      <td colSpan={5} class="text-center "> Charts </td>
     </tr>
     <tr>
       <td colSpan={5} class="text-center "> Functions </td>

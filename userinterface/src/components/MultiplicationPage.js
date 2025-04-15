@@ -1,11 +1,13 @@
-import { color } from "framer-motion";
 import { Advertisement } from "./Advertisement";
+import { NavMenu } from "./NavMenu";
 
 
 export function MultiplicationPage(){
 
     return ( 
-        
+        <diy>
+            <NavMenu>
+            </NavMenu>
         <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
         <div class="border-bottom border-5 border-primary">
             <br></br>
@@ -86,8 +88,7 @@ export function MultiplicationPage(){
         <Advertisement/>
         </div>
     </div>
-
-
+    </diy>
     );
 }
 
