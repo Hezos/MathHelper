@@ -43,16 +43,14 @@ export function NavMenu() {
                     </button>
                 </div>
                 <div>
-                  <button class="btn info" onClick={()=>{
-                    }}>
+                  <a class="btn info" href='/Multiplication' >
                       Multiplication
-                    </button>
+                    </a>
                 </div>
                  <div>
-                  <button class="btn info" onClick={()=>{
-                    }}>
+                  <a class="btn info" href='/Division' >
                       Division
-                    </button>
+                    </a>
                 </div>
               </div>
             </Offcanvas.Body>

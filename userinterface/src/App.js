@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { MultiplicationPage } from './components/MultiplicationPage';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { DivisionPage } from './components/DivisionPage';
+import NavMenu from './components/NavMenu';
 //import { motion } from 'framer-motion';
 
 
@@ -344,71 +345,6 @@ function ShowDivisionFractured(){
 
 }
 
-function DisplayDivision(){
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
-
-  ctx.reset();
-  ctx.fillStyle = "blue";
-  ctx.fillRect(300,200,100,100);
-  ctx.fillRect(100,200,100,100);
-  ctx.fillRect(400,200,100,100);
-  ctx.fillRect(200,200,100,100);
-  
-  ctx.lineWidth = 10;
-  ctx.strokeStyle = "white";
-  ctx.strokeRect(300,200,100,100);
-  ctx.strokeRect(100,200,100,100);
-  ctx.strokeRect(400,200,100,100);
-  ctx.strokeRect(200,200,100,100);
-
-  ctx.font = "50px Arial";
-  ctx.fillText("1",150,150);
-  ctx.fillText("2",250,150);
-  ctx.fillText("3",350,150);
-  ctx.fillText("4",450,150);
-
-  ctx.beginPath();
-  ctx.moveTo(520,230);
-  ctx.lineTo(800,230);
-  ctx.lineTo(800,200);
-  ctx.lineTo(830,240);
-  ctx.lineTo(800,280);
-  ctx.lineTo(800,250);
-  ctx.lineTo(520,250);
-  ctx.lineTo(520,225);
-  ctx.fill();
-
-  ctx.strokeStyle = "blue";
-  ctx.stroke();
-
-  ctx.fillRect(900,200,100,100);
-  ctx.fillRect(1050,200,100,100);
-  ctx.fillRect(1200,200,100,100);
-  ctx.fillRect(1350,200,100,100);
-
-  ctx.strokeStyle = "white";
-  ctx.strokeRect(900,200,100,100);
-  ctx.strokeRect(1050,200,100,100);
-  ctx.strokeRect(1200,200,100,100);
-  ctx.strokeRect(1350,200,100,100);
-
-  ctx.fillStyle = "green";
-  const circle = new Path2D();
-  circle.arc(950, 400, 50, 0, 2 * Math.PI);
-  circle.arc(1100, 400, 50, 0, 2 * Math.PI);
-  circle.arc(1250, 400, 50, 0, 2 * Math.PI);
-  circle.arc(1400, 400, 50, 0, 2 * Math.PI);
-  ctx.fill(circle);
-
-  ctx.fillStyle = "white";
-  ctx.fillText("P1",925,415);
-  ctx.fillText("P2",1075,415);
-  ctx.fillText("P3",1225,415);
-  ctx.fillText("P4",1375,415);
-
-}
-
 function App() {
 
 
@@ -539,11 +475,6 @@ function App() {
           DisplayFractions();
         }}>
           Show fractions
-        </button>
-        <button onClick={()=>{
-          DisplayDivision();
-        }}>
-          Show division
         </button>
         <button onClick={()=>{
           ShowDivisionFractured()
@@ -704,7 +635,8 @@ function App() {
   {
     return (      
       <div >
-        
+        <NavMenu>
+        </NavMenu>
         <div>
           <p class="text-center h1 display-1">Learn math with my sidekick!</p>
           <div class="text-center">
@@ -739,17 +671,18 @@ function App() {
     </tr>
     <tr>
       <td colSpan={3} class="text-center" scope="row">
-      <button class="btn info" onClick={()=>{
-          setShowMultiplication(true);
-         }}> 
+      <a class="btn info" href='/Multiplication'>
         Multiplication 
-        </button>
+        </a>
       </td>
       <td colSpan={8} class="text-center" scope="row">
-        <button class="btn info"> 
+        <a class="btn info" href='/Division'> 
           Division
-        </button>
+        </a>
        </td>
+    </tr>
+    <tr>
+      <td colSpan={8} class="text-center ">  Variables </td>
     </tr>
     <tr>
       <td colSpan={1} class="text-center" scope="row"> Exponentiation </td>
@@ -757,7 +690,7 @@ function App() {
       <td colSpan={5} class="text-center " scope="row"> Fractions </td>
     </tr>
     <tr>
-      <td colSpan={8} class="text-center ">  Variables </td>
+      <td colSpan={8} class="text-center ">  Squareroot </td>
     </tr>
     <tr>
       <td colSpan={8} class="text-center ">  Equations </td>
@@ -781,6 +714,9 @@ function App() {
     </tr>
     <tr>
       <td colSpan={5} class="text-center "> Functions </td>
+    </tr>
+    <tr>
+      <td colSpan={5} class="text-center "> Logarithms </td>
     </tr>
 
   </tbody>

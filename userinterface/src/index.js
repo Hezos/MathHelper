@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import { MultiplicationPage } from './components/MultiplicationPage';
+import { DivisionPage } from './components/DivisionPage';
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,10 @@ const router = createBrowserRouter([
     path: "/Multiplication",
     element:
         <MultiplicationPage/>
-
+  },
+  {
+    path: "/Division",
+    element: <DivisionPage/>
   },
 ]);
 
