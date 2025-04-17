@@ -65,26 +65,8 @@ function DisplayDivision(){
 
 }
 
+/*
 
-export function DivisionPage(){
-
-  const [count, setCount] = useState(0);
-
-    return(
-        <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
-            <div class="border-bottom border-5 border-primary">
-                <br></br>
-                <p class="text-start h1 display-1 text-center"> Choosen topic: Division </p>
-            </div>
-            <br></br>
-            <p class="text-start h6 display-6">  It is recommended to review substraction first before starting this topic. </p>
-            <br></br>
-            <p class="text-start h5 display-5" > 
-                <u >
-                    Let's suppose you have to share these rectangles to four different person:
-                </u>
-             </p>
-            <br></br>
             <button onClick={()=>{
           DisplayDivision();
         }}>
@@ -98,8 +80,195 @@ export function DivisionPage(){
     </div>
             <canvas id="canvas" width={window.innerWidth} height={window.innerHeight*0.9} class="border border-2"></canvas>
 
+
+
+*/
+
+const pictures = ["file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div1.png", "file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div2.png",
+  "file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div3.png", "file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div4.png",
+  "file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div5.png"
+]
+
+export function DivisionPage(){
+
+  const [count, setCount] = useState(0);
+
+  const handlePhaseJump = () => {
+    setCount(count + 1);
+    if(count > 4)
+    {
+      setCount(0);
+    }
+  }
+
+  if(count === 4){
+    return(
+        <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
+            <div class="border-bottom border-5 border-primary">
+                <br></br>
+                <p class="text-start h1 display-1 text-center"> Choosen topic: Division </p>
+            </div>
+            <br></br>
+            <p class="text-start h6 display-6">  It is recommended to review substraction first before starting this topic. </p>
+            <br></br>
+            <p class="text-start h5 display-5" > 
+                <u >
+                    Let's suppose you have to share these rectangles to four different person (Persons are marked with circles):
+                </u>
+             </p>
+            <br></br>
+        <div class="text-center">
+        <img class="w-75 h-75"
+        src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div5.png")} alt="Image goes here." />
         </div>
-    );
+        <button class="btn btn-primary" onClick={() => { handlePhaseJump();}}>
+          Next phase
+        </button>
+        <button class="btn btn-primary" onClick={() => { setCount(0); }}>
+          Restart
+        </button>
+        <div class="text-center">
+          <img alt='image goes here'/>
+        </div>
+        <p>
+          That's the point! You successfully distributed, or we can say divided them to four people. Let's see the phases of the rectangles with numbers.
+          First we have four, we didn't give away any. Using numbers: 4 - 0.
+          Second we have three, we gave up one, but we started with four, again using numbers: 4 - 1.
+          Third we have two, we gave up two, using numbers: 4 - 2.
+          Next we have 1, we gave up three, using numbers: 4 - 3.
+          Finally we gave up all four, again with numbers: 4 - 4.
+        </p>
+        </div>
+      );    
+    }
+    else if(count === 1)
+    {
+        return(
+          <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
+              <div class="border-bottom border-5 border-primary">
+                  <br></br>
+                  <p class="text-start h1 display-1 text-center"> Choosen topic: Division </p>
+              </div>
+              <br></br>
+              <p class="text-start h6 display-6">  It is recommended to review substraction first before starting this topic. </p>
+              <br></br>
+              <p class="text-start h5 display-5" > 
+                  <u >
+                      Let's suppose you have to share these rectangles to four different person:
+                  </u>
+               </p>
+              <br></br>
+          <div class="text-center">
+          <img class="w-75 h-75"
+            src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div2.png")} alt="Image goes here." />
+          </div>
+        <button class="btn btn-primary" onClick={() => { handlePhaseJump();}}>
+          Next phase
+        </button>
+        <button class="btn btn-primary" onClick={() => { setCount(0); }}>
+          Restart
+        </button>
+        <div class="text-center">
+        </div>
+          </div>
+        );    
+    }
+    else if(count === 2)
+      {
+          return(
+            <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
+                <div class="border-bottom border-5 border-primary">
+                    <br></br>
+                    <p class="text-start h1 display-1 text-center"> Choosen topic: Division </p>
+                </div>
+                <br></br>
+                <p class="text-start h6 display-6">  It is recommended to review substraction first before starting this topic. </p>
+                <br></br>
+                <p class="text-start h5 display-5" > 
+                    <u >
+                        Let's suppose you have to share these rectangles to four different person:
+                    </u>
+                 </p>
+                <br></br>
+            <div class="text-center">
+            <img class="w-75 h-75"
+              src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div3.png")} alt="Image goes here." />
+            </div>
+        <button class="btn btn-primary" onClick={() => { handlePhaseJump();}}>
+          Next phase
+        </button>
+        <button class="btn btn-primary" onClick={() => { setCount(0); }}>
+          Restart
+        </button>
+        <div class="text-center">
+        </div>
+            </div>
+          );    
+      }
+      else if(count === 3)
+        {
+            return(
+              <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
+                  <div class="border-bottom border-5 border-primary">
+                      <br></br>
+                      <p class="text-start h1 display-1 text-center"> Choosen topic: Division </p>
+                  </div>
+                  <br></br>
+                  <p class="text-start h6 display-6">  It is recommended to review substraction first before starting this topic. </p>
+                  <br></br>
+                  <p class="text-start h5 display-5" > 
+                      <u >
+                          Let's suppose you have to share these rectangles to four different person:
+                      </u>
+                   </p>
+                  <br></br>
+              <div class="text-center">
+              <img class="w-75 h-75"
+                src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div4.png")} alt="Image goes here." />
+              </div>
+        <button class="btn btn-primary" onClick={() => { handlePhaseJump();}}>
+          Next phase
+        </button>
+        <button class="btn btn-primary" onClick={() => { setCount(0); }}>
+          Restart
+        </button>
+        <div class="text-center">
+        </div>
+              </div>
+            );    
+        }
+        else
+        {
+          return(
+            <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
+                <div class="border-bottom border-5 border-primary">
+                    <br></br>
+                    <p class="text-start h1 display-1 text-center"> Choosen topic: Division </p>
+                </div>
+                <br></br>
+                <p class="text-start h6 display-6">  It is recommended to review substraction first before starting this topic. </p>
+                <br></br>
+                <p class="text-start h5 display-5" > 
+                    <u >
+                        Let's suppose you have to share these rectangles to four different person:
+                    </u>
+                 </p>
+                <br></br>
+            <div class="text-center">
+            <img class="w-75 h-75"
+              src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Div1.png")} alt="Image goes here." />
+            </div>
+        <button class="btn btn-primary" onClick={() => { handlePhaseJump();}}>
+          Next phase
+        </button>
+        <button class="btn btn-primary" onClick={() => { setCount(0); }}>
+          Restart
+        </button>
+        <div class="text-center">
+        </div>
+            </div>
+          );
+        }
 }
 
 export default DivisionPage;
