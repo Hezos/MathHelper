@@ -5,7 +5,7 @@ import { NavMenu } from "./NavMenu";
 export function MultiplicationPage(){
 
     return ( 
-        <diy>
+        <div>
             <NavMenu>
             </NavMenu>
         <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
@@ -25,7 +25,7 @@ export function MultiplicationPage(){
         <p class="text-center h4 display-4" style={{color:"green"}} > 2 + 2 + 2 + 2 + 2 + 2 = 12 </p>
         <div class="text-center">
         <img class="w-50 h-50 "
-        src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Mult1.png")} alt="Image goes here." />
+        src={require("../assets/Mult1.png")} alt="Image goes here." />
         </div>
         <p class="text-start h5 display-5">
             That's why multiplication was created for.
@@ -51,7 +51,7 @@ export function MultiplicationPage(){
         </p>
         <div class="text-center">
          <img class="w-50 h-50 "
-        src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Mult2.png")} alt="Image goes here." />
+        src={require("../assets/Mult2.png")} alt="Image goes here." />
         </div>
         <br></br>
         <div class="border border-primary border-4 border-info">
@@ -79,16 +79,16 @@ export function MultiplicationPage(){
         </p>
         <div class="text-center">
         <img class="w-50 h-50"
-         src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Mul4.png")} alt="Image goes here." />
+         src={require("../assets/Mul4.png")} alt="Image goes here." />
          <br></br>
         <img class="w-50 h-50 text-center"
-        src={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/components/Mult3.png")} alt="Image goes here." />
+        src={require("../assets/Mult3.png")} alt="Image goes here." />
         <br></br>
         <a href="http://localhost:3000">Further explaination in a youtube video</a>
         <Advertisement/>
         </div>
     </div>
-    </diy>
+    </div>
     );
 }
 

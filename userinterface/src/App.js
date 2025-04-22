@@ -641,7 +641,8 @@ function App() {
           <p class="text-center h1 display-1">Learn math with my sidekick!</p>
           <div class="text-center">
          <img class="w-50 h-50"
-        src ={require("file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/Welcome.png")} alt="Image goes here." />
+        src ={require("../src/assets/Welcome.png")} 
+         alt="Image goes here, from file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/assets/Welcome.png" />
         </div>
         <table class="table table-bordered table-dark">
   <thead>
