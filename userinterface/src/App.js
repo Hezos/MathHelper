@@ -660,9 +660,9 @@ function App() {
     </tr>
     <tr>
     <td colSpan={3} class="text-center" >
-       <button class="btn info">
+       <a href='/Addition'>
         Addition
-      </button> 
+      </a> 
       </td>
       <td colSpan={8} class="text-center" >
         <button class="btn info"> 
