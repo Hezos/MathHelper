@@ -686,7 +686,11 @@ function App() {
       <td colSpan={8} class="text-center ">  Variables </td>
     </tr>
     <tr>
-      <td colSpan={1} class="text-center" scope="row"> Exponentiation </td>
+      <td colSpan={1} class="text-center" scope="row">
+        <a href='/Exponentiation'>
+          Exponentiation
+        </a>
+      </td>
       <td colSpan={2} class="text-center" scope="row"> Factorials </td>
       <td colSpan={5} class="text-center " scope="row"> Fractions </td>
     </tr>

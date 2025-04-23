@@ -109,7 +109,7 @@ export function SubstractionPage(){
                     Why does this work?
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50 " alt="Image goes here." />
                 </div>
                 <p>
                     We make one big "jump" to the left instead of three small ones.
