@@ -11,6 +11,7 @@ import { AdditionPage } from './components/AdditionPage';
 import { SubstractionPage } from './components/SubstractionPage';
 import { ExponentiationPage } from './components/ExponentiationPage';
 import { FractionPage } from './components/FractionPage';
+import { FactorialPage } from './components/FactorialPage';
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: "/Fraction",
     element: <FractionPage/>
+  },
+  {
+    path: "/Factorial",
+    element: <FactorialPage/>
   },
 ]);
 
