@@ -8,6 +8,7 @@ import { MultiplicationPage } from './components/MultiplicationPage';
 import { DivisionPage } from './components/DivisionPage';
 import { NumberLinePage } from './components/NumberLinePage';
 import { AdditionPage } from './components/AdditionPage';
+import { SubstractionPage } from './components/SubstractionPage';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/Addition",
     element: <AdditionPage/>
+  },
+  {
+    path: "/Substraction",
+    element: <SubstractionPage/>
   },
 ]);
 

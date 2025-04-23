@@ -665,9 +665,9 @@ function App() {
       </a> 
       </td>
       <td colSpan={8} class="text-center" >
-        <button class="btn info"> 
+        <a href='/Substraction'> 
         Substraction
-        </button>
+        </a>
         </td>
     </tr>
     <tr>
