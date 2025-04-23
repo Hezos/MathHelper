@@ -683,7 +683,11 @@ function App() {
        </td>
     </tr>
     <tr>
-      <td colSpan={8} class="text-center ">  Variables </td>
+      <td colSpan={8} class="text-center ">  
+        <a href='/Variable'>
+          Variables
+        </a>
+      </td>
     </tr>
     <tr>
       <td colSpan={1} class="text-center" scope="row">
