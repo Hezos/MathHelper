@@ -653,9 +653,9 @@ function App() {
   <tbody>
     <tr>
     < td colSpan={8} class="text-center" scope="row">
-        <button class="btn info">
+        <a href='/Numberline'>
           Number line
-        </button> 
+        </a> 
       </td>
     </tr>
     <tr>
@@ -672,12 +672,12 @@ function App() {
     </tr>
     <tr>
       <td colSpan={3} class="text-center" scope="row">
-      <a class="btn info" href='/Multiplication'>
+      <a href='/Multiplication'>
         Multiplication 
         </a>
       </td>
       <td colSpan={8} class="text-center" scope="row">
-        <a class="btn info" href='/Division'> 
+        <a href='/Division'> 
           Division
         </a>
        </td>

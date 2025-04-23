@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import { MultiplicationPage } from './components/MultiplicationPage';
 import { DivisionPage } from './components/DivisionPage';
+import { NumberLinePage } from './components/NumberLinePage';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/Division",
     element: <DivisionPage/>
+  },
+  {
+    path: "/Numberline",
+    element: <NumberLinePage/>
   },
 ]);
 
