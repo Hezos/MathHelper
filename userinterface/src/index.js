@@ -10,6 +10,7 @@ import { NumberLinePage } from './components/NumberLinePage';
 import { AdditionPage } from './components/AdditionPage';
 import { SubstractionPage } from './components/SubstractionPage';
 import { ExponentiationPage } from './components/ExponentiationPage';
+import { FractionPage } from './components/FractionPage';
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/Exponentiation",
     element: <ExponentiationPage/>
+  },
+  {
+    path: "/Fraction",
+    element: <FractionPage/>
   },
 ]);
 

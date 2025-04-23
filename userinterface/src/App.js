@@ -692,7 +692,11 @@ function App() {
         </a>
       </td>
       <td colSpan={2} class="text-center" scope="row"> Factorials </td>
-      <td colSpan={5} class="text-center " scope="row"> Fractions </td>
+      <td colSpan={5} class="text-center " scope="row"> 
+         <a href='/Fraction'>
+            Fractions
+          </a> 
+         </td>
     </tr>
     <tr>
       <td colSpan={8} class="text-center ">  Squareroot </td>
