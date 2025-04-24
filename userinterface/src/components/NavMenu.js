@@ -24,33 +24,104 @@ export function NavMenu() {
         <Offcanvas.Body class="container">
               <div>
                 <div>
-                <button class="btn info" onClick={()=>{
-                         
-                  }}>
-                    Equations
-                  </button>
+                  <a class="btn info" href='/Numberline'>
+                    Number line
+                  </a>
                 </div>
                 <div>
-                  <button class="btn info"  onClick={()=>{
-                    }}>
-                      Area, Volume calculations
-                    </button>
+                   <a class="btn info" href='/Addition'>
+                     Addition
+                  </a> 
                 </div>
                 <div>
-                  <button class="btn info"  onClick={()=>{
-                    }}>
-                      Calculate fractions
-                    </button>
+                  <a class="btn info" href='/Substraction'> 
+                    Substraction
+                  </a>
                 </div>
                 <div>
-                  <a class="btn info" href='/Multiplication' >
-                      Multiplication
-                    </a>
+                  <a class="btn info" href='/Multiplication'>
+                   Multiplication 
+                  </a>
+                </div>
+                <div>    
+                  <a href='/Division' class="btn info"> 
+                     Division
+                  </a>
                 </div>
                  <div>
-                  <a class="btn info" href='/Division' >
-                      Division
-                    </a>
+                  <a href='/Variable' class="btn info">
+                    Variables
+                  </a>
+                </div>
+                <div>
+                  <a href='/Exponentiation' class="btn info" >
+                    Exponentiation
+                  </a>
+                </div>
+                <div>
+                  <a href='/Factorial' class="btn info" >
+                    Factorials 
+                  </a>
+                </div>
+                <div>
+                  <a href='/Fraction' class="btn info" >
+                    Fractions
+                  </a> 
+                </div>
+                <div>
+                  <a href='/Squareroot' class="btn info" >
+                    Squareroot
+                  </a> 
+                </div>
+                <div>
+                  <a href='/Equations' class="btn info" >
+                    Equations
+                  </a>
+                </div>
+                <div>
+                  <a href='/Areacalculation' class="btn info">
+                   Area calculation
+                  </a>
+                </div>
+                <div>
+                  <a href='/Series' class="btn info" >
+                    Series
+                  </a>
+                </div>
+                <div>
+                  <a href='/Percentage' class="btn info">
+                    Percentage
+                  </a>
+                </div>
+                <div>
+                  <a href='/Surfacevolumecalculations' class="btn info">
+                   Surface and volume calculations
+                  </a>
+                </div>
+                <div>
+                  <a href='/Coordinatesystem' class="btn info">
+                   Coordinate system
+                  </a>
+                </div>
+                <div>
+                  <a href='/Charts' class="btn info">
+                    Charts
+                  </a>
+                </div>
+                <div>
+                  <a href='/Functions' class="btn info">
+                   Functions
+                  </a>
+                </div>
+                <div>
+                  <a href='/SineCosine' class="btn info">
+                    Sine, Cosine
+                  </a> 
+                </div>
+                <div>
+                  <a href='/Logarithms' class="btn info">
+                   Logarithms
+                  </a>
                 </div>
               </div>
             </Offcanvas.Body>

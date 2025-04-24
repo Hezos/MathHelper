@@ -659,7 +659,7 @@ function App() {
       </td>
     </tr>
     <tr>
-    <td colSpan={3} class="text-center" >
+    <td colSpan={2} class="text-center" >
        <a href='/Addition'>
         Addition
       </a> 
@@ -671,7 +671,7 @@ function App() {
         </td>
     </tr>
     <tr>
-      <td colSpan={3} class="text-center" scope="row">
+      <td colSpan={2} class="text-center" scope="row">
       <a href='/Multiplication'>
         Multiplication 
         </a>
@@ -690,17 +690,17 @@ function App() {
       </td>
     </tr>
     <tr>
-      <td colSpan={1} class="text-center" scope="row">
-        <a href='/Exponentiation'>
+      <td  class="text-center" style={{width:"33%"}}>
+        <a href='/Exponentiation' >
           Exponentiation
         </a>
       </td>
-      <td colSpan={2} class="text-center" scope="row">
+      <td colSpan={2} class="text-center" style={{width:"33%"}} >
         <a href='/Factorial'>
           Factorials 
         </a>
       </td>
-      <td colSpan={5} class="text-center " scope="row"> 
+      <td colSpan={3} class="text-center " style={{width:"33%"}}> 
          <a href='/Fraction'>
             Fractions
           </a> 
@@ -721,59 +721,59 @@ function App() {
        </td>
     </tr>
     <tr>
-    <td  rowSpan={2} class="text-center align-middle">
+    <td  class="text-center align-middle" style={{width:"33%"}}>
       <a href='/Areacalculation'>
         Area calculation
       </a> 
     </td>
-      <td colSpan={3} class="text-center ">
+      <td colSpan={2} rowSpan={2} class="text-center align-middle" style={{width:"33%"}}>
         <a href='/Series'>
           Series
         </a>
       </td>
-      <td  colSpan={8} rowSpan={3} class="text-center align-middle" >
+      <td  colSpan={4} rowSpan={2} class="text-center align-middle" style={{width:"33%"}} >
         <a href='/Percentage'>
           Percentage
         </a>
       </td>
     </tr>
     <tr>
-      <td  colSpan={3} class="text-center" >
-        <a href='/SineCosine'>
-          Sine, Cosine
-        </a> 
-      </td>
-    </tr>
-    <tr>
-      <td  colSpan={4} class="text-center ">  
+      <td  colSpan={0} class="text-center " style={{width:"33%"}}>  
         <a href='/Surfacevolumecalculations'>
           Surface and volume calculations
         </a>  
        </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center ">
+      <td colSpan={6} class="text-center ">
         <a href='/Coordinatesystem'>
           Coordinate system
         </a> 
        </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center "> 
+      <td colSpan={6} class="text-center "> 
        <a href='/Charts'>
         Charts
        </a>
        </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center ">
+      <td colSpan={6} class="text-center ">
         <a href='/Functions'>
           Functions
         </a>
        </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center "> 
+      <td  colSpan={6} class="text-center" >
+        <a href='/SineCosine'>
+          Sine, Cosine
+        </a> 
+      </td>
+    </tr>
+    <tr>
+      <td colSpan={6} class="text-center "> 
         <a href='/Logarithms'>
           Logarithms
         </a>
