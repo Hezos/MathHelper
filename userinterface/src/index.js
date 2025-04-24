@@ -13,6 +13,7 @@ import { ExponentiationPage } from './components/ExponentiationPage';
 import { FractionPage } from './components/FractionPage';
 import { FactorialPage } from './components/FactorialPage';
 import { VariablePage } from './components/VariablePage';
+import UnderdevelopmentPage, { UnderDevelopmentPage } from './components/UnderdevelopmentPage';
 
 
 const router = createBrowserRouter([
@@ -57,6 +58,50 @@ const router = createBrowserRouter([
   {
     path: "/Variable",
     element: <VariablePage/>
+  },
+  {
+    path: "/Squareroot",
+    element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/Equations",
+    element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/Areacalculation",
+    element: <UnderdevelopmentPage/>
+  },
+  {
+    path: "/Series",
+    element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/Percentage",
+    element: <UnderdevelopmentPage/>
+  },
+  {
+    path: "/SineCosine",
+    element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/Surfacevolumecalculations",
+    element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/Coordinatesystem",
+    element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/Charts",
+    element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/Functions",
+    element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/Logarithms",
+    element: <UnderDevelopmentPage/>
   },
 ]);
 

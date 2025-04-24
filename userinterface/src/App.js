@@ -707,33 +707,77 @@ function App() {
          </td>
     </tr>
     <tr>
-      <td colSpan={8} class="text-center ">  Squareroot </td>
+      <td colSpan={8} class="text-center ">
+        <a href='/Squareroot'>
+          Squareroot
+        </a> 
+      </td>
     </tr>
     <tr>
-      <td colSpan={8} class="text-center ">  Equations </td>
+      <td colSpan={8} class="text-center ">  
+        <a href='/Equations'>
+          Equations
+        </a>  
+       </td>
     </tr>
     <tr>
-    <td  rowSpan={2} class="text-center align-middle"> Area calculation </td>
-      <td colSpan={3} class="text-center ">  Series </td>
-      <td  colSpan={8} rowSpan={3} class="text-center align-middle" > Percentage  </td>
+    <td  rowSpan={2} class="text-center align-middle">
+      <a href='/Areacalculation'>
+        Area calculation
+      </a> 
+    </td>
+      <td colSpan={3} class="text-center ">
+        <a href='/Series'>
+          Series
+        </a>
+      </td>
+      <td  colSpan={8} rowSpan={3} class="text-center align-middle" >
+        <a href='/Percentage'>
+          Percentage
+        </a>
+      </td>
     </tr>
     <tr>
-      <td  colSpan={3} class="text-center" > Sine, Cosine </td>
+      <td  colSpan={3} class="text-center" >
+        <a href='/SineCosine'>
+          Sine, Cosine
+        </a> 
+      </td>
     </tr>
     <tr>
-      <td  colSpan={4} class="text-center ">  Surface and volume calculations </td>
+      <td  colSpan={4} class="text-center ">  
+        <a href='/Surfacevolumecalculations'>
+          Surface and volume calculations
+        </a>  
+       </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center "> Coordinate system </td>
+      <td colSpan={5} class="text-center ">
+        <a href='/Coordinatesystem'>
+          Coordinate system
+        </a> 
+       </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center "> Charts </td>
+      <td colSpan={5} class="text-center "> 
+       <a href='/Charts'>
+        Charts
+       </a>
+       </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center "> Functions </td>
+      <td colSpan={5} class="text-center ">
+        <a href='/Functions'>
+          Functions
+        </a>
+       </td>
     </tr>
     <tr>
-      <td colSpan={5} class="text-center "> Logarithms </td>
+      <td colSpan={5} class="text-center "> 
+        <a href='/Logarithms'>
+          Logarithms
+        </a>
+      </td>
     </tr>
 
   </tbody>
