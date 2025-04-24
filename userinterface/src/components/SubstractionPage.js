@@ -19,7 +19,7 @@ export function SubstractionPage(){
                     Let's see the following problem: 5 - 3, I will illustrate that on the number line.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-100 h-100 " src={require("../assets/Substraction1.png")} alt="Image goes here." />
                 </div>
                 <p>
                     We start from 5 and we go left with 3 steps. We ended up on 2.
@@ -49,7 +49,7 @@ export function SubstractionPage(){
                     The following reads five minus three equals two.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50 " src={require("../assets/Substraction2.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Okay let's look at this one: 4 - 1 - 2
@@ -64,7 +64,7 @@ export function SubstractionPage(){
                     The second time we go where the first one left off.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-100 h-100 " src={require("../assets/Substraction3.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Using the number line we can write the following:
@@ -79,7 +79,7 @@ export function SubstractionPage(){
                     And finally, 3 - 2 = 1, we got what the number line showed us.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Substraction4.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Alright let's see this: 8 - 2 - 1 = 3
@@ -109,7 +109,11 @@ export function SubstractionPage(){
                     Why does this work?
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-100 h-100" src={require("../assets/Substraction5.png")} alt="Image goes here." />
+                </div>
+                <br></br>
+                <div class="text-center">
+                    <img class="w-100 h-100" src={require("../assets/Substraction6.png")} alt="Image goes here." />
                 </div>
                 <p>
                     We make one big "jump" to the left instead of three small ones.
