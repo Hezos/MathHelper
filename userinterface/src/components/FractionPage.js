@@ -22,13 +22,13 @@ export function FractionPage(){
                     Things which are naturally in one whole piece, but they've broken, or we can say fractured to two or even more parts.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Fractions1.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Yes, well you can't break them physically, but you can represent the process.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Fractions2.png")} alt="Image goes here." />
                 </div>
                 <p>
                     You already know the answer, it's division.
@@ -43,7 +43,7 @@ export function FractionPage(){
                     Let's illustrate it with a rectangle!
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-25 h-25" src={require("../assets/Fractions3.png")} alt="Image goes here." />
                 </div>
                 <p>
                     When I broke this rectangle with a line I've got two halfs. I divided it by two. 
@@ -70,7 +70,7 @@ export function FractionPage(){
                     Using this discovery we can adapt it into the number like this:
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Fractions4.png")} alt="Image goes here." />
                 </div>
                 <p>
                     We broke taht segment between 0 and 1, because we have more rectangles than nothing, but less than 1, a whole piece,
@@ -85,7 +85,7 @@ export function FractionPage(){
                     We take our magic number 10. The half of 10 is 5.
                 </p> 
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Fractions5.png")} alt="Image goes here." />
                 </div>
                 <p>
                     That's why we mark, that we have zero whole parts first.
@@ -112,7 +112,7 @@ export function FractionPage(){
                     We can divide by four:
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-25 h-25" src={require("../assets/Fractions6.png")} alt="Image goes here." />
                 </div>
                 <p>
                     In this case it will be: <span style={{display:"inline-flex",  flexDirection: "column", verticalAlign: "middle"}}>
@@ -125,7 +125,7 @@ export function FractionPage(){
                     Even with eight:
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-25 h-25" src={require("../assets/Fractions7.png")} alt="Image goes here." />
                 </div>
                 <p>
                     In this case it will be: <span style={{display:"inline-flex",  flexDirection: "column", verticalAlign: "middle"}}>
@@ -137,7 +137,7 @@ export function FractionPage(){
                     Notice that if I color more parts of the rectangles they look like when we divided it with 2, 
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Fractions8.png")} alt="Image goes here." />
                 </div>
                 <p>
                     So we can write: <span style={{display:"inline-flex",  flexDirection: "column", verticalAlign: "middle"}}>
@@ -155,7 +155,7 @@ export function FractionPage(){
                     The same is true backwards:
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Fractions9.png")} alt="Image goes here." />
                 </div>
                 
                 <a href="http://localhost:3000">Further explaination in a youtube video</a>

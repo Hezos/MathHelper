@@ -9,7 +9,7 @@ export function VariablePage(){
             <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
                 <div class="border-bottom border-5 border-primary">
                     <br></br>
-                    <p class="text-start h1 display-1 text-center"> Choosen topic: Addition </p>
+                    <p class="text-start h1 display-1 text-center"> Choosen topic: Variables </p>
             </div>
             <p>
                 It is recommended to review multiplication and division first, before starting this topic.
@@ -21,7 +21,7 @@ export function VariablePage(){
                 They are usually represented with a selected letter.
             </p>
             <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50"  src={require("../assets/Variables1.png")} alt="Image goes here." />
             </div>
              <p>
                 Well when you have situations like that is usually the question's answer is to find that.
@@ -48,7 +48,7 @@ export function VariablePage(){
                 Our final answer is 3.
              </p>
              <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Variables2.png")} alt="Image goes here." />
             </div>
            <p>
                 Yes, it is. remember, when you know the value of a Variable you can replace the Variable with the associated number.

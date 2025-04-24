@@ -27,7 +27,7 @@ export function FactorialPage(){
                     Well, I can illustrate the situation with this drawing and the count.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Factorial1.png")} alt="Image goes here." />
                 </div>
                 <p>
                     If we count them the answer is 6.
@@ -45,7 +45,7 @@ export function FactorialPage(){
                     If we take the second candidate to the second place, only one candidate will remain to the third place.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Factorials2.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Yes, but can we make more? Let's see!
@@ -66,7 +66,7 @@ export function FactorialPage(){
                     3 &#8729; 2 &#8729; 1 = 6
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Factorials3.png")} alt="Image goes here." />
                 </div>
                  <p>
                     If you look closely going to the right each number is getting decreased by one, untill it gets to the number one.

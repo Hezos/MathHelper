@@ -9,7 +9,7 @@ export function ExponentiationPage(){
             <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
                 <div class="border-bottom border-5 border-primary">
                     <br></br>
-                    <p class="text-start h1 display-1 text-center"> Choosen topic: Addition </p>
+                    <p class="text-start h1 display-1 text-center"> Choosen topic: Exponentiation </p>
                 </div>
                 <p>
                     It is recommended to review multiplication and variables first, before starting this topic.
@@ -21,7 +21,7 @@ export function ExponentiationPage(){
                     2 &#8729; 2 &#8729; 2
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Exponent1.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Just like we did in addition we break it to multiple parts.
@@ -36,7 +36,7 @@ export function ExponentiationPage(){
                     Finally 4 &#8729; 2 = 8 so the answer is 8.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 " alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Exponent2.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Yes, we will simplify multiplication now.
