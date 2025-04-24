@@ -27,7 +27,7 @@ export function AdditionPage(){
                     If I write 1 + 1, that means I go to 1 and I go right 1 time.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-100 h-100" src={require("../assets/Addition1.png")}  alt="Image goes here." />
                 </div>
                 <p>
                     We end up on 2, that means I increased 1 with 1, it went 1 higher.
@@ -51,7 +51,7 @@ export function AdditionPage(){
                     We can go further than just one. Like this: 2 + 6
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-100 h-100" src={require("../assets/Addition2.png")}  alt="Image goes here." />
                 </div>
                 <p>
                     This way we ended up on 8.
@@ -60,13 +60,13 @@ export function AdditionPage(){
                     You can try it with your fingers if you want to.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50 " src={require("../assets/Addition4.png")}  alt="Image goes here." />
                 </div>
                 <p>
                     You mean like this: 1 + 3 + 4?
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50 "  src={require("../assets/Addition5.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Well, let's split it into two parts. We have the + sign two times, we are going to "jump" two times as well.
@@ -78,7 +78,7 @@ export function AdditionPage(){
                     But with the second time we start where the first left of.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-100 h-100" src={require("../assets/Addition3.png")}  alt="Image goes here." />
                 </div>
                  <p>
                     Our answer will be 8 then. 1 + 3 + 4 = 8.
@@ -99,7 +99,7 @@ export function AdditionPage(){
                     Now we can finish it. 4 + 4 = 8
                  </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50 "  src={require("../assets/Addition6.png")} alt="Image goes here." />
                 </div>
                 <p>
                     You just do more jumps. For example:
