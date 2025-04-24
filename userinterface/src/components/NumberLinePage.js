@@ -13,7 +13,7 @@ export function NumberLinePage(){
                 </div>
                 <br></br>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-100 h-100" src={require("../assets/NumberLine.png")} alt="Image goes here." />
                 </div>
                 <p>
                     We measure a lot of things using numbers.
@@ -83,7 +83,7 @@ export function NumberLinePage(){
                     Written like zero, means the absent of everything, in other words we have nothing. Here's an illustration:
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-50 h-50 " src={require("../assets/NumberLine3.png")} alt="Image goes here." />
                 </div>
                 <p>
                     If tatu would like to stand there he would fall down, because there isn't anything there to keep him in the air.
@@ -113,7 +113,7 @@ export function NumberLinePage(){
                     As you can see on the number line negative numbers start on the left and go for the left.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50 "  alt="Image goes here." />
+                    <img class="w-25 h-25 " src={require("../assets/NumberLine2.png")} alt="Image goes here." />
                 </div>
                  <p>
                     in the case of negative numbers, it's like this flipping here.
