@@ -18,7 +18,7 @@ export function SquarerootPage(){
                         Have you ever thought about what operation can negate the exponentiation?
                     </p>  
                     <div class="text-center">
-                        <img class="w-50 h-50"  alt="Image goes here." />
+                        <img class="w-50 h-50" src={require("../assets/Squareroot1.png")}  alt="Image goes here." />
                     </div>
                     <p>
                         Well, some people did.
@@ -42,7 +42,7 @@ export function SquarerootPage(){
                         We have to find a way to make it 2<sup>1</sup>.
                     </p>
                     <div class="text-center">
-                        <img class="w-50 h-50"  alt="Image goes here." />
+                        <img class="w-50 h-50" src={require("../assets/Squareroot2.png")} alt="Image goes here." />
                     </div>
                     <p>
                         That's where fractions come into play.
@@ -68,7 +68,7 @@ export function SquarerootPage(){
                         </span> power.  
                     </p>
                     <div class="text-center">
-                        <img class="w-50 h-50"  alt="Image goes here." />
+                        <img class="w-50 h-50" src={require("../assets/Squareroot3.png")} alt="Image goes here." />
                     </div>
                     <p>
                         Yet, it is but bear with me for a moment!
@@ -113,7 +113,7 @@ export function SquarerootPage(){
                         For example for 3 it's &#8731;
                     </p>
                     <div class="text-center">
-                        <img class="w-50 h-50"  alt="Image goes here." />
+                        <img class="w-50 h-50" src={require("../assets/Squareroot4.png")} alt="Image goes here." />
                     </div>
                     <p>
                         For simple numbers we are lucky, we can solve it easily.
@@ -128,7 +128,7 @@ export function SquarerootPage(){
                         So if 9 = 3<sup>2</sup> doing a Squareroot with it will have the opposite effect, so they cancel each other and we get the original number, which was 3.
                     </p>
                     <div class="text-center">
-                        <img class="w-50 h-50"  alt="Image goes here." />
+                        <img class="w-50 h-50" src={require("../assets/Squareroot5.png")} alt="Image goes here." />
                     </div>
                     <p>
                         Okay, for this kind of problems there are more ways to solve them.

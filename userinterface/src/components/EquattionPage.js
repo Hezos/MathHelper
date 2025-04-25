@@ -27,7 +27,7 @@ export function EquationPage(){
                     I will use a balance fot this example.
                   </p>
                 <div class="text-center">
-                    <img class="w-50 h-50"  alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Equation1.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Now X is a variable. How can we find it's value?
@@ -42,7 +42,7 @@ export function EquationPage(){
                     Our goal is to have purely X on one side, and purely numbers on the other.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50"  alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Equations2.png")} alt="Image goes here." />
                 </div>
                 <p>
                     What would this mean to our equation?
@@ -57,25 +57,25 @@ export function EquationPage(){
                     This will cause a shift for our balance.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50"  alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Equation3.png")} alt="Image goes here." />
                 </div>
                 <p>
                     If we removed 3 from the left side, what will we have to do to restore the balance?
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50"  alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Equations4.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Yes, so what's that exactly?
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50"  alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Equations5.png")} alt="Image goes here." />
                 </div>
                 <p>
                     Okay, let's see what that gives us.
                 </p>
                 <div class="text-center">
-                    <img class="w-50 h-50"  alt="Image goes here." />
+                    <img class="w-50 h-50" src={require("../assets/Equation6.png")}  alt="Image goes here." />
                 </div>
                 <p>
                     9 - 3 = 6, so 6 goes to the right side.
