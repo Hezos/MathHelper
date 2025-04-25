@@ -1,9 +1,6 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react';
-import { MultiplicationPage } from './components/MultiplicationPage';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import { DivisionPage } from './components/DivisionPage';
 import NavMenu from './components/NavMenu';
 //import { motion } from 'framer-motion';
 
