@@ -123,6 +123,7 @@ export function NavMenu() {
                    Logarithms
                   </a>
                 </div>
+                
               </div>
             </Offcanvas.Body>
           </Offcanvas>
@@ -140,8 +141,6 @@ export function NavMenu() {
           </div>
           </div>
         </nav>
-
-
     </div>
   );
 }

@@ -14,6 +14,8 @@ import { FractionPage } from './components/FractionPage';
 import { FactorialPage } from './components/FactorialPage';
 import { VariablePage } from './components/VariablePage';
 import UnderdevelopmentPage, { UnderDevelopmentPage } from './components/UnderdevelopmentPage';
+import { SquarerootPage } from './components/SquarerootPage';
+import { EquationPage } from './components/EquattionPage';
 
 
 const router = createBrowserRouter([
@@ -61,11 +63,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/Squareroot",
-    element: <UnderDevelopmentPage/>
+    element: <SquarerootPage/>
   },
   {
     path: "/Equations",
-    element: <UnderDevelopmentPage/>
+    element: <EquationPage/>
   },
   {
     path: "/Areacalculation",

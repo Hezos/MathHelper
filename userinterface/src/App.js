@@ -8,134 +8,6 @@ import NavMenu from './components/NavMenu';
 //import { motion } from 'framer-motion';
 
 
-//Solve drawings as pictures maybe?
-function DrawBasic(posX, posY, width, height){
-  //It has a + on the left side (x + something)
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
-
-  ctx.reset();
-  //drawing the rectangle
-  ctx.fillStyle = "blue";
-  ctx.fillRect(posX-width/2, posY-height/2, width, height);
-
-  ctx.fillStyle = "purple";
-  ctx.fillRect(posX-width/2-width/12, posY-height*2.5, width/6, height);
-  ctx.fillRect(posX-width/2+width-width/12, posY-height*2.5, width/6, height);
-  
-  ctx.fillRect(posX-width/2+width-width/12, posY-height*3.5, width/6, height);
-  ctx.fillStyle = "gray";
-  ctx.fillRect(posX-width/2-width/12, posY-height*3.5, width/6, height);
-  
-  ctx.fillStyle = "green";
-  ctx.fillRect(posX-width/2-width/8, posY-height*1.5, width/4, height);
-  ctx.fillRect(posX-width/2+width-width/8, posY-height*1.5, width/4, height);
-  const circle = new Path2D();
-  circle.arc(posX-width/2, posY+height/32, height*0.75, 0, 2 * Math.PI);
-  circle.arc(posX-width/2 + width, posY+height/32, height*0.75, 0, 2 * Math.PI);
-
-  ctx.fillStyle = "yellow";
-  ctx.fill(circle);
-
-  //Triangle
-  ctx.beginPath();
-  ctx.moveTo(posX+width/6, posY+height*2);
-  ctx.lineTo(posX, posY+height/2);
-  ctx.lineTo(posX-width/6, posY+height*2);
-  ctx.fill();
-}
-
-//If there wasn't any reset it continues rotating over and over again. stance is for the left or right position
-function DrawRotated(degree, posX, posY, width, height, stance){
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
-  ctx.reset();
-  //Rotated pole starts here.
-  ctx.translate(posX, posY);
-
-  ctx.rotate(degree);
-  ctx.translate(-1*(posX), -1*(posY));
-
-  // Rotated rectangle
-  ctx.fillStyle = "blue";
-  ctx.fillRect(posX-width/2, posY-height/2, width, height);
-
-  ctx.translate(posX, posY);
-  //End of rotated pole
-  ctx.resetTransform();
-  
-  ctx.fillStyle = "purple";
-  if(stance === "left"){
-    ctx.fillRect(posX-width/2-width/12 - (width/2- width/2*Math.cos(degree)) + width, posY-height*3.5 + width/2* Math.sin(degree), width/6, height);
-  }
-  ctx.fillRect(posX-width/2+width-width/12 + (width/2- width/2*Math.cos(degree)) - width, posY-height*2.5 - width/2* Math.sin(degree), width/6, height);
-
-  if(stance === "right"){
-    ctx.fillRect(posX-width/2+width-width/12 + (width/2- width/2*Math.cos(degree)) - width, posY-height*3.5 - width/2* Math.sin(degree), width/6, height);
-  }
-  ctx.fillStyle = "gray";
-  if(stance === "left"){
-    ctx.fillRect(posX-width/2-width/12 - (width/2- width/2*Math.cos(degree)) + width, posY-height*2.5 + width/2* Math.sin(degree), width/6, height);
-
-  }
-  if(stance === "right"){
-    ctx.fillRect(posX-width/2-width/12 - (width/2- width/2*Math.cos(degree)) + width, posY-height*2.5 + width/2* Math.sin(degree), width/6, height);
-  }
-
-  ctx.fillStyle = "green";
-  ctx.fillRect(posX-width/2-width/8 - (width/2- width/2*Math.cos(degree)) + width, posY-height*1.5 + width/2* Math.sin(degree), width/4, height);
-  ctx.fillRect(posX-width/2+width-width/8 + (width/2- width/2*Math.cos(degree)) - width, posY-height*1.5 - width/2* Math.sin(degree), width/4, height);
-  const circle = new Path2D();
-  circle.arc(posX-width/2 - (width/2- width/2*Math.cos(degree)) + width, posY+height/32 + width/2* Math.sin(degree), height*0.75, 0, 2 * Math.PI);
-  circle.arc(posX-width/2 + (width/2- width/2*Math.cos(degree)), posY+height/32 - width/2* Math.sin(degree), height*0.75, 0, 2 * Math.PI);
-
-  ctx.fillStyle = "yellow";
-  ctx.fill(circle);
-
-  //Triangle
-  ctx.beginPath();
-  ctx.moveTo(posX+width/6, posY+height*2);
-  ctx.lineTo(posX, posY+height/2);
-  ctx.lineTo(posX-width/6, posY+height*2);
-  ctx.fill();
-
-  
-}
-
-function DrawSolved(posX, posY, width, height){
-  //It has a + on the left side (x + something)
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
-
-  ctx.reset();
-  //drawing the rectangle
-  ctx.fillStyle = "blue";
-  ctx.fillRect(posX-width/2, posY-height/2, width, height);
-
-  ctx.fillStyle = "purple";
-  
-  ctx.fillRect(posX-width/2+width-width/12, posY-height*2.5, width/6, height);
-  ctx.fillStyle = "gray";
-  ctx.fillRect(posX-width/2-width/12, posY-height*2.5, width/6, height);
-  
-  ctx.fillStyle = "green";
-  ctx.fillRect(posX-width/2-width/8, posY-height*1.5, width/4, height);
-  ctx.fillRect(posX-width/2+width-width/8, posY-height*1.5, width/4, height);
-  const circle = new Path2D();
-  circle.arc(posX-width/2, posY+height/32, height*0.75, 0, 2 * Math.PI);
-  circle.arc(posX-width/2 + width, posY+height/32, height*0.75, 0, 2 * Math.PI);
-
-  ctx.fillStyle = "yellow";
-  ctx.fill(circle);
-
-  //Triangle
-  ctx.beginPath();
-  ctx.moveTo(posX+width/6, posY+height*2);
-  ctx.lineTo(posX, posY+height/2);
-  ctx.lineTo(posX-width/6, posY+height*2);
-  ctx.fill();
-}
-
 function DisplayFractions(){
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
@@ -348,15 +220,8 @@ function ShowDivisionFractured(){
 function App() {
 
 
-  const [showEquation, setShowEquation] = useState(false);
-
-  const [showFractions, setShowFractions] = useState(false);
-
   const [showShapes, setShowShapes] = useState(false);
 
-  const [showMultiplication, setShowMultiplication] = useState(false);
-
-  const [showDivision, setShowDivision] = useState(false);
 
 
 //https://motion.dev/docs/react-quick-start
@@ -382,48 +247,7 @@ function App() {
 */
 
 
-  if(showEquation)
-  {
-    return (
-      <div className="App" >
-        <h1>
-          Learn math with my sidekick!
-        </h1>
-      <button onClick={()=>{
-        setShowEquation(true);
-      }}>
-        Equations
-      </button>
-      <button>
-        Area, Volume calculations
-      </button>
-        <canvas id="canvas" width={window.innerWidth} height={window.innerHeight*0.9} class="border border-2"></canvas>
-        <div >
-          <button onClick={() => {
-              DrawRotated(-60, window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40, "left");  
-            }}>
-            Add to left
-          </button>
-          <button onClick={()=>{
-            DrawBasic(window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);
-          }}>
-            Restart balance
-          </button>
-          <button onClick={() => {
-            DrawRotated(60, window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40, "right");  
-            }}>
-            Add to right
-          </button>
-          <button onClick={() => {
-              DrawSolved(window.innerWidth / 2,window.innerHeight*0.9/2, window.innerWidth/5,window.innerHeight/40);
-            }}>
-            Show solution
-          </button>
-        </div>      
-      </div>
-    );
-  }
-  else if(showShapes)
+  if(showShapes)
   {
     return (
       <div className="App" >
@@ -431,206 +255,19 @@ function App() {
         Learn math with my sidekick!
       </h1>
       <button onClick={()=>{
-        setShowEquation(true);
+        setShowShapes(true);
       }}>
         Equations
       </button>
       <button>
         Area, Volume calculations
       </button>
-      <button onClick={()=>{
-        setShowFractions(true);
-      }}>
-        Calculating fractions
-      </button>
       <canvas id="canvas" width={window.innerWidth} height={window.innerHeight*0.9} class="border border-2"></canvas>
       </div>
     );
   
   }
-  else if(showFractions)
-  {
-    return (
-        <div className="App" >
-        <h1>
-          Learn math with my sidekick!
-        </h1>
-        <button onClick={()=>{
-          setShowEquation(true);
-        }}>
-          Equations
-        </button>
-        <button onClick={()=>{
-          setShowShapes(true);
-        }}>
-          Area, Volume calculations
-        </button>
-        <button onClick={()=>{
-          setShowFractions(true);
-        }}>
-          Calculate fractions
-        </button>
-        <canvas id="canvas" width={window.innerWidth} height={window.innerHeight*0.9} class="border border-2"></canvas>
-        <button onClick={()=>{
-          DisplayFractions();
-        }}>
-          Show fractions
-        </button>
-        <button onClick={()=>{
-          ShowDivisionFractured()
-        }}>
-          Show fractured division
-        </button>
-      </div>
-    );
-  }
-  else if(showMultiplication)
-  {
-    return (
-      <div >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div>
-            <button class="btn info" >
-              Topics
-            </button>
-            <Offcanvas  >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title>
-                  Learn math with my sidekick!
-                </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body class="container">
-              <div>
-                <div>
-                <button class="btn info" onClick={()=>{
-                         
-                  }}>
-                    Equations
-                  </button>
-                </div>
-                <div>
-                  <button class="btn info"  onClick={()=>{
-                    }}>
-                      Area, Volume calculations
-                    </button>
-                </div>
-                <div>
-                  <button class="btn info"  onClick={()=>{
-                    setShowFractions(true);
-                    }}>
-                      Calculate fractions
-                    </button>
-                </div>
-                <div>
-                  <button class="btn info" onClick={()=>{
-                    setShowMultiplication(true);
-                    }}>
-                      Multiplication
-                    </button>
-                </div>
-                 <div>
-                  <button class="btn info" onClick={()=>{
-                    }}>
-                      Division
-                    </button>
-                </div>
-              </div>
-            </Offcanvas.Body>
-             </Offcanvas>         
-        </div>
-        <div class="collapse navbar-collapse" >
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="btn info" href="http://localhost:3000" >
-                Home
-              </a>
-            </li>
-          </ul>
-          <div class="text-end w-100">
-            <a class="btn info" href="http://localhost:3000">YouTube</a>
-          </div>
-          </div>
-        </nav>
-        <div class="text-center">
-        <MultiplicationPage/>
-        </div>
-      </div>
-    );
-  }
-  else if(showDivision)
-  {
-    return (
-      <div >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div>
-            <button class="btn info"  >
-              Topics
-            </button>
-            <Offcanvas >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title>
-                  Learn math with my sidekick!
-                </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body class="container">
-              <div>
-                <div>
-                <button class="btn info" onClick={()=>{
-                    setShowEquation(true);     
-                  }}>
-                    Equations
-                  </button>
-                </div>
-                <div>
-                  <button class="btn info"  onClick={()=>{
-                    setShowShapes(true);
-                    }}>
-                      Area, Volume calculations
-                    </button>
-                </div>
-                <div>
-                  <button class="btn info"  onClick={()=>{
-                    setShowFractions(true);
-                    }}>
-                      Calculate fractions
-                    </button>
-                </div>
-                <div>
-                  <button class="btn info" onClick={()=>{
-                    setShowMultiplication(true);
-                    }}>
-                      Multiplication
-                    </button>
-                </div>
-                <div>
-                  <button class="btn info" onClick={()=>{
-                    
-                    setShowDivision(true);
-                    }}>
-                      Division
-                    </button>
-                </div>
-              </div>
-            </Offcanvas.Body>
-          </Offcanvas>         
-        </div>
-        <div class="collapse navbar-collapse" >
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="btn info" href="http://localhost:3000" >
-                Home
-              </a>
-            </li>
-          </ul>
-          <div class="text-end w-100">
-            <a class="btn info" href="http://localhost:3000">YouTube</a>
-          </div>
-          </div>
-        </nav>
-        <DivisionPage/>   
-       </div> 
-    );
-  }
+  
   else
   {
     return (      

@@ -242,7 +242,7 @@ export function DivisionPage(){
         </p>
         <br></br>
         <p>
-          4 - <span class="border border-primary">4</span> = 0
+          4 - <span class="border border-1">4</span> = 0
         </p>
         <br></br>
         <p>
