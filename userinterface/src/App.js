@@ -272,7 +272,7 @@ function App() {
         <NavMenu>
         </NavMenu>
         <div>
-          <p class="text-center h1 display-1">Learn math with my sidekick!</p>
+          <p class="text-center h1 display-1" style={{fontFamily:"sans-serif"}}>Learn math with my sidekick!</p>
           <div class="text-center">
          <img class="w-50 h-50"
         src ={require("../src/assets/Welcome.png")} 
