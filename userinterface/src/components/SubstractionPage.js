@@ -10,102 +10,106 @@ export function SubstractionPage(){
             <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
                 <div class="border-bottom border-5 border-primary">
                     <br></br>
-                    <p class="text-start h1 display-1 text-center"> Choosen topic: Substraction </p>
+                    <p class="text-start h1 display-1 text-center" style={{fontFamily:"sans-serif"}}> Choosen topic: Substraction </p>
                 </div>
-                <p>
+                <br></br>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
                     It is recommended to review number line first, before starting this topic.
                 </p>
-                <p>
-                    Let's see the following problem: 5 - 3, I will illustrate that on the number line.
+                <br></br>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    Let's see the following problem: <span style={{color:"orange"}}>5 - 3</span>, I will illustrate that on the number line.
                 </p>
                 <div class="text-center">
                     <img class="w-100 h-100 " src={require("../assets/Substraction1.png")} alt="Image goes here." />
                 </div>
-                <p>
-                    We start from 5 and we go left with 3 steps. We ended up on 2.
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    We start from <span style={{color:"orange"}}>5</span> and we go left with <span style={{color:"orange"}}>3</span> steps. We ended up on <span style={{color:"orange"}}>2</span>.
                 </p>
-                <p>
-                    With numbers: 5 - 3 = 2
+                <br></br>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    With numbers: <span style={{color:"orange"}}>5 - 3 = 2</span>
                 </p>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
                     Let's see the following:
                 </p>
-                <p>
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif",color:"green"}}>
                     5 - 3
                 </p>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif",color:"green"}}>
                     5 : The number which we want to decrease
                 </p>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif",color:"green"}}>
                     - : the symbol of substraction
                 </p>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif",color:"green"}}>
                     3 : The number we want to decrease with
                 </p>
-                <p>
-                    Alongside with the result: 5 - 3 = 2.
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    Alongside with the result: <span style={{color:"orange"}}>5 - 3 = 2</span>.
                 </p>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
                     The following reads five minus three equals two.
                 </p>
                 <div class="text-center">
                     <img class="w-50 h-50 " src={require("../assets/Substraction2.png")} alt="Image goes here." />
                 </div>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif",color:"purple"}}>
                     Okay let's look at this one: 4 - 1 - 2
                 </p>
-                <p>
-                    We can split this example int two parts.
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    We can split this example into two parts.
                 </p>
-                <p>
-                    We have two minus signs, that means we will go left twice.
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    We have two minus signs, that means we will go left  <u>twice</u>.
                 </p>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif",color:"green"}}>
                     The second time we go where the first one left off.
                 </p>
                 <div class="text-center">
                     <img class="w-100 h-100 " src={require("../assets/Substraction3.png")} alt="Image goes here." />
                 </div>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
                     Using the number line we can write the following:
                 </p>
-                <p>
-                    If we look at 4 - 1 = 3, that tells us, that 4 - 1 is replacable with 3, that's what we are going to do.
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    If we look at <span style={{color:"orange"}}>4 - 1 = 3 </span>, that tells us, that <span style={{color:"orange"}}>4 - 1</span> is replacable with <span style={{color:"orange"}}>3</span>, that's what we are going to do.
                 </p>
-                <p>
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif", color:"orange"}}>
                     4 - 1 - 2 = 3 - 2
                 </p>
-                <p>
-                    And finally, 3 - 2 = 1, we got what the number line showed us.
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    And finally, <span style={{color:"orange"}}>3 - 2 = 1</span>, we got what the number line showed us.
                 </p>
                 <div class="text-center">
                     <img class="w-50 h-50" src={require("../assets/Substraction4.png")} alt="Image goes here." />
                 </div>
-                <p>
-                    Alright let's see this: 8 - 2 - 1 = 3
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    Alright let's see this: <span style={{color:"orange"}}>8 - 2 - 1 - 3</span>
                 </p>
-                <p>
+                <p class="text-start h6 display-6" style={{fontFamily:"sans-serif", color:"purple"}}>
                     Well we just substract more times like this:
                 </p>
-                <p>
-                    <span>8 - 2</span> -1 -3 = 6 - 1 - 3
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif"}}>
+                <span style={{color:"orange"}}>8 - 2</span> -1 -3 = <span style={{color:"orange"}}>6</span> - 1 - 3
                 </p>
-                <p>
-                    <span>6 - 1</span> -3 = 5 - 3
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif"}}>
+                <span style={{color:"orange"}}>6 - 1</span> -3 = <span style={{color:"orange"}}>5</span> - 3
                 </p>
-                <p>
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif", color:"green"}}>
                     5 - 3 = 2
                 </p>
-                <p>
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif", color:"purple"}}>
                     If you are familiar with addition you can substract the sum of these numbers.
                 </p>
-                <p>
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif"}}>
                     2 + 1 + 3 = 6
                 </p>
-                <p>
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif"}}>
                     8 - 6 = 2, We have the same result.
                 </p>
-                <p>
+                <br></br>
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif"}}>
                     Why does this work?
                 </p>
                 <div class="text-center">
@@ -115,8 +119,10 @@ export function SubstractionPage(){
                 <div class="text-center">
                     <img class="w-100 h-100" src={require("../assets/Substraction6.png")} alt="Image goes here." />
                 </div>
-                <p>
-                    We make one big "jump" to the left instead of three small ones.
+                <p class="text-center h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    <u>
+                        We make one big "jump" to the left instead of three small ones.
+                    </u>
                 </p>
                 <a href="http://localhost:3000">Further explaination in a youtube video</a>
                 <Advertisement/>   

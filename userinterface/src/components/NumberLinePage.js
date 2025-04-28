@@ -11,7 +11,7 @@ export function NumberLinePage(){
             <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
                 <div class="border-bottom border-5 border-primary">
                 <br></br>
-                <p class="text-start h1 display-1 text-center" style={{fontFamily:"sans-serif"}}> Choosen topic: Number line </p>
+                <p class="h1 display-1 text-center" style={{fontFamily:"sans-serif"}}> Choosen topic: Number line </p>
                 </div>
                 <br></br>
                 <div class="text-center">
@@ -41,16 +41,16 @@ export function NumberLinePage(){
                     The further the number on the line the higher. If you start counting with your fingers you can notice, that the longer you go, the more fingers you require after each number.
                 </p>
                 <p class="h6 display-6 font-weight-bold" style={{fontFamily:"sans-serif"}}>
-                    Note, when you reach 10 you can tell, that you "ran out of fingers" to count further.
+                    Note, when you reach <span style={{color:"orange"}}>10</span> you can tell, that you "ran out of fingers" to count further.
                 </p>
                 <p class="h6 display-6" style={{color:"green", fontFamily:"sans-serif"}}>
                     This 10 will be our first magic number. You have to pause a bit when you reach 10. This magic number has two parts.
                 </p>
                 <p class="h6 display-6 text-justify" style={{fontFamily:"sans-serif"}}>
-                    If we want to go further we have to change one part. Let's change the second part, marked with this symbol 0. I will talk about this symbol later. If you look closely when we go further from the symbol 0, the next is 1 on the line. So when we count further we replace the 0 with 1. This way we get the following number: 11, the next will be 12, and so on, like we did before. We do that untill we reach 19.
+                    If we want to go further we have to change one part. Let's change the second part, marked with this symbol <span style={{color:"orange"}}>0</span>. I will talk about this symbol later. If you look closely when we go further from the symbol <span style={{color:"orange"}}>0</span>, the next is <span style={{color:"orange"}}>1</span> on the line. So when we count further we replace the <span style={{color:"orange"}}>0</span> with <span style={{color:"orange"}}>1</span>. This way we get the following number: <span style={{color:"orange"}}>11</span>, the next will be <span style={{color:"orange"}}>12</span>, and so on, like we did before. We do that untill we reach <span style={{color:"orange"}}>19</span>.
                 </p>
                 <p class="h6 display-6 text-justify border border-primary border-4 border-info" style={{fontFamily:"sans-serif"}}>
-                    When we get the we <span style={{color:"red"}}> don't write </span> 110, that's a different number. We write 20. Implicating you have to use the first part, not where the 0 was originally. The 20 would mean you've gone on two circles with your fingers, 110 would mean 11 circles.
+                    When we get the we <span style={{color:"red"}}> don't write </span> 110, that's a different number. We write <span style={{color:"orange"}}>20</span>. Implicating you have to use the first part, not where the <span style={{color:"orange"}}>0</span> was originally. The <span style={{color:"orange"}}>20</span> would mean you've gone on two circles with your fingers, 110 would mean <span style={{color:"orange"}}>11</span> circles.
                 </p>
                 <br></br>
                 <p class="h6 display-6" style={{fontFamily:"sans-serif"}}>
@@ -80,7 +80,7 @@ export function NumberLinePage(){
                     Hence the further you go on the left the lower the number you get.
                 </p>
                 <p class="h6 display-6" style={{fontFamily:"sans-serif"}}>
-                    We mark these numbers with a <span class="h6 display-6 border border-primary border-4 border-info">-</span> sign. for example -2 -1 -5. As you can see on the number line negative numbers start on the left and go for the left.
+                    We mark these numbers with a <span class="h6 display-6 border border-primary border-4 border-info">-</span> sign. for example <span style={{color:"orange"}}>-2 -1 -5</span> . As you can see on the number line negative numbers start on the left and go for the left.
                 </p>
                 <div class="text-center">
                     <img class="w-25 h-25 " src={require("../assets/NumberLine2.png")} alt="Image goes here." />

@@ -272,13 +272,17 @@ function App() {
         <NavMenu>
         </NavMenu>
         <div>
-          <p class="text-center h1 display-1" style={{fontFamily:"sans-serif"}}>Learn math with my sidekick!</p>
+          <p class="text-center h1 display-1" style={{fontFamily:"sans-serif"}}>Learn Math with my sidekick!</p>
+          <p class="h6 display-6 text-center" style={{fontFamily:"sans-serif"}}>
+            Welcome to my page! I post Math topics here, for people who want to learn, partnering with my sidekick an armadillo named Tatu. We hope you get the best of grades in your studies.
+          </p>
           <div class="text-center">
-         <img class="w-50 h-50"
+         <img class="w-25 h-25"
         src ={require("../src/assets/Welcome.png")} 
          alt="Image goes here, from file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/assets/Welcome.png" />
         </div>
-        <table class="table table-bordered table-dark">
+        <div class="table-responsive">
+        <table class="table table-bordered  w-80">
   <thead>
     <tr>
       <th colSpan={8} class="text-center" scope="row">Table of contents</th>
@@ -416,6 +420,7 @@ function App() {
 
   </tbody>
 </table>
+</div>
         </div>
       </div>
     );
