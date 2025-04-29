@@ -269,17 +269,19 @@ function App() {
   {
     return (      
       <div >
-        <NavMenu>
-        </NavMenu>
+        <NavMenu/>
         <div>
-          <p class="text-center h1 display-1" style={{fontFamily:"sans-serif"}}>Learn Math with my sidekick!</p>
-          <p class="h6 display-6 text-center" style={{fontFamily:"sans-serif"}}>
-            Welcome to my page! I post Math topics here, for people who want to learn, partnering with my sidekick an armadillo named Tatu. We hope you get the best of grades in your studies.
+          <p class="text-center h1 display-1" style={{fontFamily:"sans-serif"}}>Welcome!</p>
+          <p class="h6 display-6 text-start text-justifiy" style={{fontFamily:"sans-serif"}}>
+             Topics on the left, socials on the right, dump animal in the center. 
+          </p>
+          <p class="h6 display-6 text-start text-justifiy" style={{fontFamily:"sans-serif"}}>
+          I'm a Computer Science and Engineering college grad, who still isn't tired of Math to this day. I post Math topics here, for everyone who needs help to learn, partnering with my sidekick an armadillo named Tatu. We wish you get the best of grades and the least horrible teachers for your studies.
           </p>
           <div class="text-center">
          <img class="w-25 h-25"
         src ={require("../src/assets/Welcome.png")} 
-         alt="Image goes here, from file:///media/kubuntu/QuestionMark/Projects/MathHelper/userinterface/src/assets/Welcome.png" />
+         alt="Image goes here" />
         </div>
         <div class="table-responsive">
         <table class="table table-bordered  w-80">
