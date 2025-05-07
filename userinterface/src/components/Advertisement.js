@@ -1,5 +1,4 @@
 import React from 'react';
-import AdSense from 'react-adsense';
 
 export function Advertisement(){
 //            
@@ -9,14 +8,16 @@ export function Advertisement(){
             <p>
                 Placeholder for applications and advertisement
             </p>
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <AdSense.Google
-            client='ca-pub-7292810486004926'
-            slot='7806394673'
-            style={{ display: 'block' }}
-            layout='in-article'
-            format='fluid'
-        />
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4527385682541454"
+                crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+            style={{display:'block'}}
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-4527385682541454"
+     data-ad-slot="2714714081"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
         </div>        
     );

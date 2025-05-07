@@ -270,7 +270,8 @@ function App() {
     return (      
       <div >
         <NavMenu/>
-        <div>
+        <div class="container">
+          <div >
           <p class="text-center h1 display-1" style={{fontFamily:"sans-serif"}}>Welcome!</p>
           <p class="h6 display-6 text-start text-justifiy" style={{fontFamily:"sans-serif"}}>
              Topics on the left, socials on the right, dump animal in the center. 
@@ -287,7 +288,7 @@ function App() {
         <table class="table table-bordered  w-80">
   <thead>
     <tr>
-      <th colSpan={8} class="text-center" scope="row">Table of contents</th>
+      <th colSpan={8} class="text-center" scope="row">Table of the topics</th>
       </tr>
   </thead>
   <tbody>
@@ -420,11 +421,13 @@ function App() {
       </td>
     </tr>
 
-  </tbody>
-</table>
-</div>
-        </div>
-      </div>
+      </tbody>
+      </table>
+    </div>
+    </div>
+    </div>
+   </div>
+
     );
   }
 }
