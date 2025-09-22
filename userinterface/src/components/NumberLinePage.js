@@ -8,8 +8,8 @@ export function NumberLinePage(){
     return(
         <div>
             <NavMenu/>
-            <div class="container border border-primary border-3 rounded-4 " style={{background:"darkgray"}}>
-                <div class="border-bottom border-5 border-primary">
+            <div class="container ">
+                <div>
                 <br></br>
                 <p class="h1 display-1 text-center" style={{fontFamily:"sans-serif"}}> Choosen topic: Number line </p>
                 </div>
@@ -17,14 +17,21 @@ export function NumberLinePage(){
                 <div class="text-center">
                     <img class="w-100 h-100" src={require("../assets/NumberLine.png")} alt="Image goes here." />
                 </div>
+                <br></br>
                 <p class="h6 display-6" style={{fontFamily:"sans-serif"}}>
-                    We measure a lot of things using numbers. For example when your parents or doctors measure your height, or your score when you play games.
+                    We measure a lot of things using numbers. 
+                </p>
+                <br>
+                </br>
+                <p class="h6 display-6" style={{fontFamily:"sans-serif"}}>
+                    For example when your parents or doctors measure your height, or your score when you play games.
                 </p>
                 <br>
                 </br>
                 <p class="h5 display-5 border border-primary border-4 border-info" style={{fontFamily:"sans-serif"}}>
                     The number line is a tool to help visualize these measurements.
                 </p>
+                <br></br>
                 <p class="h6 display-6" style={{fontFamily:"sans-serif"}}>
                     When we first look at the number line we can see it is a straight line. I would like to divide it to three parts, using the following pieces:
                 </p>

@@ -16,6 +16,7 @@ import { VariablePage } from './components/VariablePage';
 import UnderdevelopmentPage, { UnderDevelopmentPage } from './components/UnderdevelopmentPage';
 import { SquarerootPage } from './components/SquarerootPage';
 import { EquationPage } from './components/EquattionPage';
+import { AreacalculationPage } from './components/AreaCalculationPage';
 
 
 const router = createBrowserRouter([
@@ -71,7 +72,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Areacalculation",
-    element: <UnderdevelopmentPage/>
+    element: <AreacalculationPage/>
   },
   {
     path: "/Series",
