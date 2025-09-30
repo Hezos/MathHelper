@@ -273,11 +273,13 @@ function App() {
         <div class="container">
           <div >
           <p class="text-center h1 display-1" style={{fontFamily:"sans-serif"}}>Welcome!</p>
-          <p class="h6 display-6 text-start text-justifiy" style={{fontFamily:"sans-serif"}}>
-             Topics on the left, socials on the right, dump animal in the center. 
+          <p class="h3 text-start text-justifiy" style={{fontFamily:"sans-serif"}}>
+             Topics on the left, socials on the right, dump animal in the middle. 
           </p>
-          <p class="h6 display-6 text-start text-justifiy" style={{fontFamily:"sans-serif"}}>
-          I'm a Computer Science and Engineering college grad, who still isn't tired of Math to this day. I post Math topics here, for everyone who needs help to learn, partnering with my sidekick an armadillo named Tatu. We wish you get the best of grades and the least horrible teachers for your studies.
+          <br/>
+          <p class="h3 text-start text-justifiy" style={{fontFamily:"sans-serif"}}>
+          I'm a Computer Science and Engineering college grad, who still isn't tired of Math to this day. 
+          I post Math topics here, for everyone who needs help to learn, partnering with my sidekick an armadillo named Tatu. We wish you get the best of grades and the least horrible teachers for your studies.
           </p>
           <div class="text-center">
          <img class="w-25 h-25"
@@ -288,133 +290,133 @@ function App() {
         <table class="table table-bordered  w-80">
   <thead>
     <tr>
-      <th colSpan={8} class="text-center" scope="row">Table of the topics</th>
+      <th colSpan={8} class="text-center" scope="row" style={{fontFamily:"sans-serif"}}>Table of the topics</th>
       </tr>
   </thead>
   <tbody>
     <tr>
-    < td colSpan={8} class="text-center" scope="row">
+    < td colSpan={8} class="text-center" scope="row" style={{fontFamily:"sans-serif"}}>
         <a href='/Numberline'>
           Number line
         </a> 
       </td>
     </tr>
     <tr>
-    <td colSpan={2} class="text-center" >
+    <td colSpan={2} class="text-center" style={{fontFamily:"sans-serif"}}>
        <a href='/Addition'>
         Addition
       </a> 
       </td>
-      <td colSpan={8} class="text-center" >
+      <td colSpan={8} class="text-center" style={{fontFamily:"sans-serif"}}>
         <a href='/Substraction'> 
         Substraction
         </a>
         </td>
     </tr>
     <tr>
-      <td colSpan={2} class="text-center" scope="row">
+      <td colSpan={2} class="text-center" scope="row" style={{fontFamily:"sans-serif"}}>
       <a href='/Multiplication'>
         Multiplication 
         </a>
       </td>
-      <td colSpan={8} class="text-center" scope="row">
+      <td colSpan={8} class="text-center" scope="row" style={{fontFamily:"sans-serif"}}>
         <a href='/Division'> 
           Division
         </a>
        </td>
     </tr>
     <tr>
-      <td colSpan={8} class="text-center ">  
+      <td colSpan={8} class="text-center " style={{fontFamily:"sans-serif"}}>  
         <a href='/Variable'>
           Variables
         </a>
       </td>
     </tr>
     <tr>
-      <td  class="text-center" style={{width:"33%"}}>
+      <td  class="text-center" style={{width:"33%", fontFamily:"sans-serif"}} >
         <a href='/Exponentiation' >
           Exponentiation
         </a>
       </td>
-      <td colSpan={2} class="text-center" style={{width:"33%"}} >
+      <td colSpan={2} class="text-center" style={{width:"33%", fontFamily:"sans-serif"}} >
         <a href='/Factorial'>
           Factorials 
         </a>
       </td>
-      <td colSpan={3} class="text-center " style={{width:"33%"}}> 
+      <td colSpan={3} class="text-center " style={{width:"33%", fontFamily:"sans-serif"}}> 
          <a href='/Fraction'>
             Fractions
           </a> 
          </td>
     </tr>
     <tr>
-      <td colSpan={8} class="text-center ">
+      <td colSpan={8} class="text-center " style={{fontFamily:"sans-serif"}}>
         <a href='/Squareroot'>
           Squareroot
         </a> 
       </td>
     </tr>
     <tr>
-      <td colSpan={8} class="text-center ">  
+      <td colSpan={8} class="text-center " style={{fontFamily:"sans-serif"}}>  
         <a href='/Equations'>
           Equations
         </a>  
        </td>
     </tr>
     <tr>
-    <td  class="text-center align-middle" style={{width:"33%"}}>
+    <td  class="text-center align-middle" style={{width:"33%", fontFamily:"sans-serif"}}>
       <a href='/Areacalculation'>
         Area calculation
       </a> 
     </td>
-      <td colSpan={2} rowSpan={2} class="text-center align-middle" style={{width:"33%"}}>
+      <td colSpan={2} rowSpan={2} class="text-center align-middle" style={{width:"33%", fontFamily:"sans-serif"}}>
         <a href='/Series'>
           Series
         </a>
       </td>
-      <td  colSpan={4} rowSpan={2} class="text-center align-middle" style={{width:"33%"}} >
+      <td  colSpan={4} rowSpan={2} class="text-center align-middle" style={{width:"33%", fontFamily:"sans-serif"}} >
         <a href='/Percentage'>
           Percentage
         </a>
       </td>
     </tr>
     <tr>
-      <td  colSpan={0} class="text-center " style={{width:"33%"}}>  
+      <td  colSpan={0} class="text-center " style={{width:"33%", fontFamily:"sans-serif"}}>  
         <a href='/Surfacevolumecalculations'>
           Surface and volume calculations
         </a>  
        </td>
     </tr>
     <tr>
-      <td colSpan={6} class="text-center ">
+      <td colSpan={6} class="text-center " style={{fontFamily:"sans-serif"}}>
         <a href='/Coordinatesystem'>
           Coordinate system
         </a> 
        </td>
     </tr>
     <tr>
-      <td colSpan={6} class="text-center "> 
+      <td colSpan={6} class="text-center " style={{fontFamily:"sans-serif"}}> 
        <a href='/Charts'>
         Charts
        </a>
        </td>
     </tr>
     <tr>
-      <td colSpan={6} class="text-center ">
+      <td colSpan={6} class="text-center " style={{fontFamily:"sans-serif"}}>
         <a href='/Functions'>
           Functions
         </a>
        </td>
     </tr>
     <tr>
-      <td  colSpan={6} class="text-center" >
+      <td  colSpan={6} class="text-center" style={{fontFamily:"sans-serif"}}>
         <a href='/SineCosine'>
           Sine, Cosine
         </a> 
       </td>
     </tr>
     <tr>
-      <td colSpan={6} class="text-center "> 
+      <td colSpan={6} class="text-center " style={{fontFamily:"sans-serif"}}> 
         <a href='/Logarithms'>
           Logarithms
         </a>
