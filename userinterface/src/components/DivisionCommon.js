@@ -9,19 +9,19 @@ export function DivisionCommon(){
           That's the point! You successfully distributed, or we can say divided them to four people. Let's see the phases of the rectangles with numbers.
         </p>
         <p class="text-start h4" style={{fontFamily:"sans-serif"}}>
-        <span style={{color:"yellow"}}>First</span> we have four, we didn't give away any. Using numbers: <span style={{color:"orange"}}>4 - 0</span>.
+        <span style={{color:"brown"}}>First</span> we have four, we didn't give away any. Using numbers: <span style={{color:"orange"}}>4 - 0</span>.
         </p>
         <p class="text-start h4" style={{fontFamily:"sans-serif"}}>
-        <span style={{color:"yellow"}}>Second</span> we have three, we gave up one, but we started with four, again using numbers: <span style={{color:"orange"}}>4 - 1</span>.
+        <span style={{color:"brown"}}>Second</span> we have three, we gave up one, but we started with four, again using numbers: <span style={{color:"orange"}}>4 - 1</span>.
         </p>
         <p class="text-start h4" style={{fontFamily:"sans-serif"}}>
-        <span style={{color:"yellow"}}>Third</span> we have two, we gave up two, using numbers: <span style={{color:"orange"}}>4 - 2</span>.
+        <span style={{color:"brown"}}>Third</span> we have two, we gave up two, using numbers: <span style={{color:"orange"}}>4 - 2</span>.
         </p>
         <p class="text-start h4" style={{fontFamily:"sans-serif"}}>
-        <span style={{color:"yellow"}}>Next</span> we have 1, we gave up three, using numbers: <span style={{color:"orange"}}>4 - 3</span>.
+        <span style={{color:"brown"}}>Next</span> we have 1, we gave up three, using numbers: <span style={{color:"orange"}}>4 - 3</span>.
         </p>
         <p class="text-start h4" style={{fontFamily:"sans-serif"}}>
-        <span style={{color:"yellow"}}>Finally</span> we gave up all four, again with numbers: <span style={{color:"orange"}}>4 - 4</span>.
+        <span style={{color:"brown"}}>Finally</span> we gave up all four, again with numbers: <span style={{color:"orange"}}>4 - 4</span>.
         </p>
         <br></br>
         <p class="text-start h4" style={{fontFamily:"sans-serif", color:"purple"}}>
@@ -70,7 +70,7 @@ export function DivisionCommon(){
           This reads: four divided by four equals one.
         </p>
         <br></br>
-        <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+        <p class="text-start h4" style={{fontFamily:"sans-serif", color:"brown"}}>
           Let's look at an other example:
         </p>
         <p class="text-center h4" style={{fontFamily:"sans-serif"}}>
@@ -117,7 +117,7 @@ export function DivisionCommon(){
           <img class="w-75 h-75" src={require('../assets/DivEpl3.png')}
              alt="Image goes here." />
           </div>
-          <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+          <p class="text-start h4" style={{fontFamily:"sans-serif", color:"brown"}}>
           Alrigth buddy, if you know multiplication you can use it backwards, since they are opposite operations.
         </p>
         <p class="text-start h4" style={{fontFamily:"sans-serif"}}>

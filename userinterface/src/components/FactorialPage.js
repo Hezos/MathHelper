@@ -52,19 +52,19 @@ export function FactorialPage(){
                 <div class="text-center">
                     <img class="w-50 h-50" src={require("../assets/Factorials2.png")} alt="Image goes here." />
                 </div>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     Yes, but can we make more? Let's see!
                 </p>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     For the first place I can put 3 candidates.
                 </p>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     If I put one on the first place I can only put 2 to the second place.
                 </p>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     Lastly I can only put the one remaining candidate to the last place.
                 </p>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     If we multiply this number we get the 6.
                 </p>
                 <p class="text-center h4" style={{fontFamily:"sans-serif", color:"green"}}>

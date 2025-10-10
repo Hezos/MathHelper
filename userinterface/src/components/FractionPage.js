@@ -107,10 +107,10 @@ export function FractionPage(){
                 <p class="text-start h4" style={{fontFamily:"sans-serif", color:"green"}}>
                     This marks we have 0.5 rectangles if we use numbers.
                 </p>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     We can use different numbers ofcourse.
                 </p>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     We can divide by four:
                 </p>
                 <br></br>
@@ -118,27 +118,27 @@ export function FractionPage(){
                     <img class="w-25 h-25" src={require("../assets/Fractions6.png")} alt="Image goes here." />
                 </div>
                 <br></br>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     In this case it will be: <span style={{display:"inline-flex",  flexDirection: "column", verticalAlign: "middle"}}>
                         <span>2</span>
                             <span style={{borderTop:"1px solid"}}>4</span>
                         </span> because I divided by 4 but I took 2 parts from the four original, marked by the coloring.
                 </p>
                 <br></br>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     Even with eight:
                 </p>
                 <br></br>
                 <div class="text-center">
                     <img class="w-25 h-25" src={require("../assets/Fractions7.png")} alt="Image goes here." />
                 </div>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     In this case it will be: <span style={{display:"inline-flex",  flexDirection: "column", verticalAlign: "middle"}}>
                         <span>4</span>
                             <span style={{borderTop:"1px solid"}}>8</span>
                         </span> because I divided by 8, I took 4 parts from the four original, marked by the coloring.
                 </p>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     Notice that if I color more parts of the rectangles they look like when we divided it with 2. 
                 </p>
                 <br></br>
@@ -146,7 +146,7 @@ export function FractionPage(){
                     <img class="w-50 h-50" src={require("../assets/Fractions8.png")} alt="Image goes here." />
                 </div>
                 <br></br>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     So we can write: <span style={{display:"inline-flex",  flexDirection: "column", verticalAlign: "middle"}}>
                         <span>1</span>
                             <span style={{borderTop:"1px solid"}}>2</span>
@@ -158,7 +158,7 @@ export function FractionPage(){
                             <span style={{borderTop:"1px solid"}}>8</span>
                         </span>
                 </p>
-                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"yellow"}}>
+                <p class="text-start h4" style={{fontFamily:"sans-serif", color:"red"}}>
                     The same is true backwards:
                 </p>
                 <div class="text-center">

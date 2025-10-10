@@ -30,13 +30,13 @@ export function ExponentiationPage(){
                     Just like we did in addition we break it to multiple parts.
                 </p>
                 <p class="h4 text-start" style={{fontFamily:"sans-serif"}}>
-                    <span style={{color:"yellow"}}>First</span>, 2 &#8729; 2 = 4 so we replace it.
+                    <span style={{color:"red"}}>First</span>, 2 &#8729; 2 = 4 so we replace it.
                 </p>
                 <p class="h4 text-start" style={{fontFamily:"sans-serif"}}>
-                    <span style={{color:"yellow"}}>Then</span> <span style={{color:"orange"}}>2 &#8729; 2</span> &#8729; 2 = <span style={{color:"orange"}}>4</span> &#8729; 2
+                    <span style={{color:"red"}}>Then</span> <span style={{color:"orange"}}>2 &#8729; 2</span> &#8729; 2 = <span style={{color:"orange"}}>4</span> &#8729; 2
                 </p>
                 <p class="h4 text-start" style={{fontFamily:"sans-serif"}}>
-                <span style={{color:"yellow"}}>Finally</span> <span style={{color:"green"}}>4 &#8729; 2 = 8</span> so the answer is <span style={{color:"green"}}>8</span>.
+                <span style={{color:"red"}}>Finally</span> <span style={{color:"green"}}>4 &#8729; 2 = 8</span> so the answer is <span style={{color:"green"}}>8</span>.
                 </p>
                 <div class="text-center">
                     <img class="w-50 h-50" src={require("../assets/Exponent2.png")} alt="Image goes here." />
