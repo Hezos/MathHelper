@@ -369,16 +369,23 @@ function App() {
         Area calculation
       </a> 
     </td>
-      <td colSpan={2} rowSpan={2} class="text-center align-middle" style={{width:"33%", fontFamily:"sans-serif"}}>
+      <td colSpan={2} rowSpan={3} class="text-center align-middle" style={{width:"33%", fontFamily:"sans-serif"}}>
         <a href='/Series'>
           Series
         </a>
       </td>
-      <td  colSpan={4} rowSpan={2} class="text-center align-middle" style={{width:"33%", fontFamily:"sans-serif"}} >
+      <td  colSpan={4} rowSpan={3} class="text-center align-middle" style={{width:"33%", fontFamily:"sans-serif"}} >
         <a href='/Percentage'>
           Percentage
         </a>
       </td>
+    </tr>
+    <tr>
+      <td  colSpan={0} class="text-center " style={{width:"33%", fontFamily:"sans-serif"}}>
+        <a href='/GeometricFigures'>
+          Geometric figures
+          </a>  
+        </td>
     </tr>
     <tr>
       <td  colSpan={0} class="text-center " style={{width:"33%", fontFamily:"sans-serif"}}>  

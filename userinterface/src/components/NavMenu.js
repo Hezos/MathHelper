@@ -84,6 +84,11 @@ export function NavMenu() {
                   </a>
                 </div>
                 <div>
+                  <a href='/GeometricFigures' class="btn info" style={{fontFamily:"sans-serif"}}>
+                   Geometric figures
+                  </a>
+                </div>
+                <div>
                   <a href='/Series' class="btn info" style={{fontFamily:"sans-serif"}}>
                     Series
                   </a>

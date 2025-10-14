@@ -17,6 +17,7 @@ import UnderdevelopmentPage, { UnderDevelopmentPage } from './components/Underde
 import { SquarerootPage } from './components/SquarerootPage';
 import { EquationPage } from './components/EquattionPage';
 import { AreacalculationPage } from './components/AreaCalculationPage';
+import { GeometricFigures } from './components/GeometricFigures';
 
 
 const router = createBrowserRouter([
@@ -105,6 +106,10 @@ const router = createBrowserRouter([
   {
     path: "/Logarithms",
     element: <UnderDevelopmentPage/>
+  },
+  {
+    path: "/GeometricFigures",
+    element: <GeometricFigures/>
   },
 ]);
 
